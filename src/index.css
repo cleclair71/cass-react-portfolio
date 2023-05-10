@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Hahmlet:wght@100&family=Just+Me+Again+Down+Here&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Hahmlet:wght@100&family=Josefin+Slab:wght@500&family=Just+Me+Again+Down+Here&display=swap');
 
 *{
   margin: 0;
@@ -13,7 +13,7 @@
   --red: #ce112e;
   --black: #010200;
   --hand: font-family: 'Just Me Again Down Here', cursive;
-  --thin: font-family: 'Hahmlet', serif;
+  --thin: font-family: 'Josefin Slab', serif;
   --funky: font-family: 'Goudy Bookletter 1911', serif;
 }
 body{

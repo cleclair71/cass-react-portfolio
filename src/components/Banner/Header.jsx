@@ -8,7 +8,7 @@ const Header = () => {
         <Container bar={bar}>
             <Logo>
                 <span className="black"><GiPaintBrush /></span>
-                <h1>My Portfolio</h1>
+                <h1>portfolio</h1>
             </Logo>
             <Nav bar={bar}>
                 <span><a href="#home">home</a></span>
@@ -95,7 +95,8 @@ span {
     a {
         color: var(--black);
         text-decoration: none;
-        font-family: var(--hand);
+        font-family: 'Just Me Again Down Here', cursive;
+        font-size: 1.4rem;
         position: relative;
         font-weight: 300;
         :before {
