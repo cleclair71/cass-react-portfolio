@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?&family=Secular+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Hahmlet:wght@100&family=Just+Me+Again+Down+Here&display=swap');
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--thin);
   scroll-behavior: smooth;
 }
 
@@ -13,11 +12,18 @@
   --background: #dcddd8;
   --red: #ce112e;
   --black: #010200;
+  --hand: font-family: 'Just Me Again Down Here', cursive;
+  --thin: font-family: 'Hahmlet', serif;
+  --funky: font-family: 'Goudy Bookletter 1911', serif;
 }
 body{
   width: 100%;
   background-color: var(---background);
-  color: var(--red);
+  color: var(--black);
   overflow-x: hidden;
   position: relative;
+}
+
+.black{
+  color: var(--black);
 }
