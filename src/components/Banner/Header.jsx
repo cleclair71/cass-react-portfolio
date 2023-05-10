@@ -11,10 +11,10 @@ const Header = () => {
                 <h1>portfolio</h1>
             </Logo>
             <Nav bar={bar}>
-                <span><a href="#home">home</a></span>
-                <span><a href="#service">services</a></span>
-                <span><a href="#project">projects</a></span>
-                <span><a href="#footer">portfolio</a></span>
+                <span><a href="#about">about me</a></span>
+                <span><a href="#project">portfolio</a></span>
+                <span><a href="#footer">contact</a></span>
+                <span><a href="#resume">resume</a></span>
             </Nav>
             <div onClick={() => setBar(!bar)} className="bars">
                 <div className="bar"></div>
@@ -72,8 +72,10 @@ const Logo = styled.div`
         font-size: 2rem;
         }
         h1 {
-            font-size: 1.5rem;
-            font-weight: 600;`
+            font-size: 2rem;
+            font-weight: 200;
+            font-family: 'Just Me Again Down Here';
+            text-transform: uppercase;`
 
 const Nav = styled.div`
 @media (max-width: 640px) {
@@ -106,7 +108,7 @@ span {
             right: 0;
             bottom: -2px;
             height: 2px;
-            background-color: var(--black);
+            background-color: var(--red);
             transform: scaleX(0);
             transform-origin: right;
             transition: transform 400ms ease-in-out;
@@ -119,4 +121,4 @@ span {
                     opacity: 0.8;
                     }
                     }
-                    }`
+                    };`

@@ -1,6 +1,8 @@
 import Header from './components/Banner/Header.jsx';
 import styled from "styled-components";
 import ProfHeader from './components/Banner/ProfHeader.jsx';
+import About from './components/about-me/about.jsx';
+
 
 function App() {
   return (
@@ -9,6 +11,8 @@ function App() {
     <Header />
     <ProfHeader />
     </Banner>
+    <About />
+    <changeColour />
    </Container>
   );
 }
@@ -22,3 +26,7 @@ height: 100vh;
     height: 100%;
     padding-bottom: 2rem;
   }`;
+
+  const changeColour = styled.div`
+  background-color: #9b9893;
+  `;
