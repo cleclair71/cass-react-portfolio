@@ -1,10 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?&family=Secular+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root{
+  --background: #dcddd8;
+  --red: #ce112e;
+  --black: #010200;
+}
 body{
   width: 100%;
   background-color: var(---background);
-  color: #fff;
+  color: var(--red);
   overflow-x: hidden;
   position: relative;
 }

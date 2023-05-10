@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { GiCandleFlame } from 'react-icons/gi';
+import { GiPaintBrush } from 'react-icons/gi';
 
 const Header = () => {
     const [bar, setBar] = useState(false);
     return (
         <Container bar={bar}>
             <Logo>
-                <span className="green"><GiCandleFlame /></span>
+                <span className="green"><GiPaintBrush /></span>
                 <h1>My Portfolio</h1>
             </Logo>
             <Nav bar={bar}>
@@ -22,3 +22,9 @@ const Header = () => {
         </Container>
     )
 }
+
+export default Header;
+
+const Container = styled.div``
+const Logo = styled.div``
+const Nav = styled.div``

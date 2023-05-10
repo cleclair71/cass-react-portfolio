@@ -1,0 +1,4 @@
+background: #dcddd8 hsl(72,7%,86%)rgb(220,221,216)
+red accents: #ce112e
+black accents: #010200
+dark grey: #2b2c25
