@@ -11,10 +11,10 @@ const Header = () => {
                 <h1>My Portfolio</h1>
             </Logo>
             <Nav bar={bar}>
-                <span><a href="#home">Home</a></span>
-                <span><a href="#service">Services</a></span>
-                <span><a href="#project">Projects</a></span>
-                <span><a href="#footer">Portfolio</a></span>
+                <span><a href="#home">home</a></span>
+                <span><a href="#service">services</a></span>
+                <span><a href="#project">projects</a></span>
+                <span><a href="#footer">portfolio</a></span>
             </Nav>
             <div onClick={() => setBar(!bar)} className="bars">
                 <div className="bar"></div>
@@ -25,7 +25,45 @@ const Header = () => {
 
 export default Header;
 
-const Container = styled.div``
+const Container = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1.7rem 0;
+    position: relative;
+    animation: header 500ms ease-in-out;
+    @media (max-width: 840px) {
+        width: 90%;
+        }
+        @media (max-width: 640px) {
+            .bars{
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                z-index: 100;
+                padding: 0.5rem;
+                .bar {
+                    position: absolute;
+                    width: 100%;
+                    height: 2px;
+                    background-color: ${props => props.bar ? "transparent" : "#fff"};
+                    transition: background-color 400ms ease-in-out;
+                    :before, :after {
+                        content: "";
+                        height: 2px;
+                        width: 100%;
+                        background-color: var(--background);
+                        position: absolute;
+                    }
+                    :before {
+                        transform: ${props => props.bar ? "rotate(45deg)" : "translateY(10px)"};
+                        transition: all 400ms ease-in-out;
+            }`
 const Logo = styled.div`
     display: flex;
     align-items: center;
@@ -36,6 +74,7 @@ const Logo = styled.div`
         h1 {
             font-size: 1.5rem;
             font-weight: 600;`
+
 const Nav = styled.div`
 @media (max-width: 640px) {
     position: fixed;
@@ -47,7 +86,7 @@ const Nav = styled.div`
     align-items: center;
     gap: 2rem;
     font-weight: 700;
-    height: 100vh;
+    height: ${props => props.bar ? "100vh" : 0};
     z-index: 100;
     transition: height 400ms ease-in-out;
 }
