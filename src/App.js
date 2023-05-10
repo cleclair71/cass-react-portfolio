@@ -1,11 +1,13 @@
 import Header from './components/Banner/Header.jsx';
 import styled from "styled-components";
+import ProfHeader from './components/Banner/ProfHeader.jsx';
 
 function App() {
   return (
    <Container>
     <Banner>
     <Header />
+    <ProfHeader />
     </Banner>
    </Container>
   );
