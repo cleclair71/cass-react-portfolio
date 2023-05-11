@@ -2,6 +2,7 @@ import Header from './components/Banner/Header.jsx';
 import styled from "styled-components";
 import ProfHeader from './components/Banner/ProfHeader.jsx';
 import About from './components/about-me/about.jsx';
+import Projects from './components/Projects/Projects.jsx';
 
 
 
@@ -15,6 +16,7 @@ function App() {
     <ChangeColor>
     <About />
     </ChangeColor>
+    <Projects />
    </Container>
   );
 }
