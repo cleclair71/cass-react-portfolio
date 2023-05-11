@@ -35,7 +35,39 @@ const About = () => {
 
 export default About;
 
-const Container = styled.div``;
-const Cards = styled.div``;
+const Container = styled.div`
+    width: 80%;
+    margin: auto;
+    max-width: 1200px;
+    padding: 3rem 0;
+    
+    h4 {
+        font-weight: 400;
+    padding: 0.1rem 0;
+    font-family: 'Just Me Again Down Here', cursive;
+    font-size: 1.8rem;
+    }
+    h1 {
+        font-size: 3rem;
+    color: var(--red);
+    font-family: 'Goudy Bookletter 1911', serif;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    }
+
+    @media (max-width: 840px) {
+        width: 90%;
+        }
+        h1 {
+            padding-top: .5rem;
+        }`;
+const Cards = styled.div`
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 4rem;
+  gap: 1rem;
+  `;
+
 
 

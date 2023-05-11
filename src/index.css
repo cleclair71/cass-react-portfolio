@@ -6,10 +6,12 @@
   box-sizing: border-box;
   font-family: var(--thin);
   scroll-behavior: smooth;
+  
 }
 
 :root{
-  --background: #dcddd8;
+  ---background: #dcddd8;
+  --dark: #b4b4b0;
   --red: #ce112e;
   --black: #010200;
   --hand: font-family: 'Just Me Again Down Here', cursive;

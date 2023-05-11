@@ -4,6 +4,7 @@ import ProfHeader from './components/Banner/ProfHeader.jsx';
 import About from './components/about-me/about.jsx';
 
 
+
 function App() {
   return (
    <Container>
@@ -11,8 +12,9 @@ function App() {
     <Header />
     <ProfHeader />
     </Banner>
+    <ChangeColor>
     <About />
-    <changeColour />
+    </ChangeColor>
    </Container>
   );
 }
@@ -27,6 +29,6 @@ height: 100vh;
     padding-bottom: 2rem;
   }`;
 
-  const changeColour = styled.div`
-  background-color: #9b9893;
+  const ChangeColor = styled.div`
+  background: var(--dark);
   `;

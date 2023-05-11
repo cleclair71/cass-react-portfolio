@@ -61,7 +61,7 @@ const Texts = styled.div`
 flex: 1;
 h4 {
     font-weight: 400;
-    padding: 0.4rem 0;
+    padding: 0.1rem 0;
     font-family: 'Just Me Again Down Here', cursive;
     font-size: 1.8rem;
 }
@@ -77,7 +77,7 @@ h1 {
 h3 {
     font-size: 1.4rem;
     font-weight: 600;
-    padding-bottom: 1.3rem;
+    padding-bottom: 1.2rem;
     text-transform: uppercase;
     font-family: 'Josefin Slab', serif;
     }
@@ -87,8 +87,8 @@ h3 {
         font-family: 'Josefin Slab', serif;
     }
     button {
-        padding: 0.7rem 1.5rem;
-        margin-top: 3rem;
+        padding: 0.7rem 1.4rem;
+        margin-top: 2rem;
         cursor: pointer;
         font-weight: 600;
         filter: drop-shadow(0px 8px 8px #ce112e);
@@ -100,7 +100,7 @@ h3 {
         }
         `;
 const Social = styled.div`
-margin-top: 3rem;
+margin-top: 2rem;
 display: flex;
 align-items: center;
 gap: 1rem;
