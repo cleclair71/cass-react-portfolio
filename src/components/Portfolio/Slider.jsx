@@ -6,23 +6,23 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 let data = [
     {
-        img : '/assets/project1.png', 
+        img : 'assets/project.JPG', 
         desc : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
     },
     {
-        img : '/assets/project2.png',
+        img : 'assets/project.JPG',
         desc : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
     },
     {
-        img : '/assets/project3.png',
+        img : 'assets/project.JPG',
         desc : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
     },
     {
-        img : '/assets/project4.png',
+        img : 'assets/project.JPG',
         desc : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
     },
     {
-        img : '/assets/project5.png',
+        img : 'assets/project.JPG',
         desc : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
     },
 
@@ -81,8 +81,8 @@ const SlideShow = () => {
                 {sliderPro}
             </Slider>
             <Buttons>
-                <button onClick={() => sliderRef.current.slickPrev()}><IoIosArrowBack /></button>
-                <button onClick={() => sliderRef.current.slickNext()}><IoIosArrowForward /></button>
+                <button onClick={() => sliderRef.current.slickPrev()} className='back'><IoIosArrowBack /></button>
+                <button onClick={() => sliderRef.current.slickNext()}className='next'><IoIosArrowForward /></button>
             </Buttons>
            
         </Container>
@@ -95,4 +95,17 @@ const Container = styled.div`
   position: relative;
 `;
 
-const Buttons = styled.div``;
+const Buttons = styled.div`
+button {
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--dark);
+    border: none;
+    position: absolute;
+    top: 45%;
+    right: -1rem;
+    
+    .back{
+        left: -1rem;
+    }
+}`; 
