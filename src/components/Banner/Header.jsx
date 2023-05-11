@@ -30,13 +30,17 @@ const Container = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 80%;
+    max-width: 1280px;
     margin: 0 auto;
-    padding: 1.7rem 0;
+    padding: 1.5rem 0;
     position: relative;
     animation: header 500ms ease-in-out;
-    @media (max-width: 840px) {
+    @media(max-width: 840px){
         width: 90%;
-        }
+    }
+    .bars{
+        display: none;
+    }
         @media (max-width: 640px) {
             .bars{
                 width: 40px;
@@ -51,19 +55,30 @@ const Container = styled.div`
                     position: absolute;
                     width: 100%;
                     height: 2px;
-                    background-color: ${props => props.bar ? "transparent" : "#fff"};
+                    background-color: ${props => props.bar ? "transparent" : "var(--black)"};
                     transition: background-color 400ms ease-in-out;
                     :before, :after {
                         content: "";
                         height: 2px;
                         width: 100%;
-                        background-color: var(--background);
+                        background-color: var(--black);
                         position: absolute;
+
                     }
-                    :before {
+                
+                    :before{
                         transform: ${props => props.bar ? "rotate(45deg)" : "translateY(10px)"};
                         transition: all 400ms ease-in-out;
-            }`
+                    }
+    
+                    :after{
+                        transform: ${props => props.bar ? "rotate(-45deg)" : "translateY(-10px)"};
+                        transition: all 400ms ease-in-out;
+                    }
+                }
+            }
+        }
+    `
 const Logo = styled.div`
     display: flex;
     align-items: center;
@@ -90,6 +105,7 @@ const Nav = styled.div`
     font-weight: 700;
     height: ${props => props.bar ? "100vh" : 0};
     z-index: 100;
+    overflow: hidden;
     transition: height 400ms ease-in-out;
 }
 span {
