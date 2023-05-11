@@ -49,7 +49,7 @@ const Container = styled.div`
     }
     h1 {
         font-size: 3rem;
-    color: var(--red);
+    color: var(--orange);
     font-family: 'Goudy Bookletter 1911', serif;
     font-weight: 300;
     letter-spacing: 0.2rem;

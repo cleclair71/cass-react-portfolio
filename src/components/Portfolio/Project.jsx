@@ -52,7 +52,7 @@ img{
         width: 90%;
         a{
             margin-left: 0.5rem;
-            color: var(--red);
+            color: var(--orange);
         }
     }
 }

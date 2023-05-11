@@ -10,10 +10,11 @@
 }
 
 :root{
-  --background: #dcddd8;
-  --dark: #b4b4b0;
-  --red: #ce112e;
-  --black: #010200;
+  --background: #718385;
+  --dark: #13262a;
+  --orange: #945632;
+  --white: #FFF8F4;
+  --green: #5b5d30;
   --hand: font-family: 'Just Me Again Down Here', cursive;
   --thin: font-family: 'Josefin Slab', serif;
   --funky: font-family: 'Goudy Bookletter 1911', serif;
@@ -21,16 +22,16 @@
 body{
   width: 100%;
   background-color: var(--background);
-  color: var(--black);
+  color: var(--white);
   overflow-x: hidden;
   position: relative;
 }
 
 .black{
-  color: var(--black);
+  color: var(--white);
 }
 .red{
-  color: var(--red);
+  color: var(--orange);
 }
 
 .slick-list, .slick-slider, .slick-track{

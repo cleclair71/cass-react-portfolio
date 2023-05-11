@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { GiPaintBrush } from 'react-icons/gi';
+import { TfiHeart } from 'react-icons/tfi';
 
 const Header = () => {
     const [bar, setBar] = useState(false);
     return (
         <Container bar={bar}>
             <Logo>
-                <span className="black"><GiPaintBrush /></span>
+                <span className="black"><TfiHeart/></span>
                 <h1>portfolio</h1>
             </Logo>
             <Nav bar={bar}>
@@ -55,13 +55,13 @@ const Container = styled.div`
                     position: absolute;
                     width: 100%;
                     height: 2px;
-                    background-color: ${props => props.bar ? "transparent" : "var(--black)"};
+                    background-color: ${props => props.bar ? "transparent" : "var(--white)"};
                     transition: background-color 400ms ease-in-out;
                     :before, :after {
                         content: "";
                         height: 2px;
                         width: 100%;
-                        background-color: var(--black);
+                        background-color: var(--white);
                         position: absolute;
 
                     }
@@ -87,9 +87,9 @@ const Logo = styled.div`
         font-size: 2rem;
         }
         h1 {
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-weight: 200;
-            font-family: 'Just Me Again Down Here';
+            font-family: 'Josefin Slab', serif;
             text-transform: uppercase;`
 
 const Nav = styled.div`
@@ -111,7 +111,7 @@ const Nav = styled.div`
 span {
     margin-left: 1rem;
     a {
-        color: var(--black);
+        color: var(--white);
         text-decoration: none;
         font-family: 'Just Me Again Down Here', cursive;
         font-size: 1.4rem;
@@ -124,7 +124,7 @@ span {
             right: 0;
             bottom: -2px;
             height: 2px;
-            background-color: var(--red);
+            background-color: var(--white);
             transform: scaleX(0);
             transform-origin: right;
             transition: transform 400ms ease-in-out;

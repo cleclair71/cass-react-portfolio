@@ -67,9 +67,9 @@ h4 {
 }
 h1 {
     font-size: 3rem;
-    
+    color: var(--white);
     font-family: 'Goudy Bookletter 1911', serif;
-    font-weight: 300;
+    font-weight: 800;
     letter-spacing: 0.2rem;
     text-transform: uppercase;
     padding-bottom: .2rem;
@@ -80,66 +80,80 @@ h3 {
     padding-bottom: 1.2rem;
     text-transform: uppercase;
     font-family: 'Josefin Slab', serif;
+    color: rgba(255, 248, 244, 0.6);
     }
     p {
         font-size: 1.2rem;
-        font-weight: 500;
+        font-weight: 200;
         font-family: 'Josefin Slab', serif;
+        color: rgba(255, 248, 244, 0.9);
+        
     }
     button {
+        background: none;
+        border: 1px solid var(--white);
         padding: 0.7rem 1.4rem;
         margin-top: 2rem;
         cursor: pointer;
         font-weight: 600;
-        filter: drop-shadow(0px 8px 8px #ce112e);
+        filter: drop-shadow(0px 8px 8px #13262a);
+        color: var(--white);
         font-family: 'Josefin Slab', serif;
+        letter-spacing: 0.2rem;
         font-size: .8rem;
         text-transform: uppercase;
         :hover {
-            filter: drop-shadow(0px 8px 8px #010200);
+            background-color: rgba(255, 248, 244, 0.2);
         }
         `;
-const Social = styled.div`
-margin-top: 2rem;
-display: flex;
-align-items: center;
-gap: 1rem;
-.social-icons {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    span {
-        width: 2.3rem;
-        height: 2rem;
+        const Social = styled.div`
+        margin-top: 2rem;
         display: flex;
-        clip-path: circle(50% at 50% 50%);
-        background-color: #ce112e;
-        position: relative;
-        transition: transform 400ms ease-in-out;
-        :hover {
-            transform: rotate(360deg);
-         }
-         }
-         p {
-            font-size: 0.9rem;
-    @media (max-width: 690px) {
-      font-size: 0.7rem;
-    }
-            
-         }
-         a {
+        align-items: center;
+        gap: 1rem;
+        
+        .social-icons {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          
+          span {
+            width: 2.5rem;
+            height: 2.5rem;
+            display: flex;
             color: var(--background);
+            background-color: transparent; 
+            border: 1px solid var(--white); 
+            border-radius: 50%; 
+            position: relative;
+            transition: transform 400ms ease-in-out, background-color 400ms ease-in-out;
+            
+            :hover {
+              background-color: rgba(255, 248, 244, 0.2); 
+            }
+          }
+          
+          p {
+            font-size: 0.9rem;
+            @media (max-width: 690px) {
+              font-size: 0.7rem;
+            }
+          }
+          
+          a {
+            color: var(--white);
             top: 55%;
             left: 50%;
             position: absolute;
             transform: translate(-50%, -50%); 
             font-size: 1.2rem;
-            }
-            }`;
+          }
+        }
+      `;
 const Profile = styled.div`
 img {
     width: 25rem;
-    filter: drop-shadow(0px 8px 8px #ce112e);
+    filter: drop-shadow(0px 8px 8px var(--dark));
     transition: transform 400ms ease-in-out;
     @media (max-width: 790px) {
         width: 20rem;
