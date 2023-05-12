@@ -112,4 +112,6 @@ const Footer = () => {
 export default Footer;
 
 const Container = styled.div``;
+const Profile = styled.div``;
+const ArrowUp = styled.div``;
 

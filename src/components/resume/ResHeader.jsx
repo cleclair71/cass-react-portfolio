@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { AiOutlineGithub, AiOutlineLinkedin, AiOutlineDownload } from 'react-icons/ai';
 import { Slide } from 'react-awesome-reveal';
 
-const ResumeHeader = () => {
+const ResHeader = () => {
     return (
         <Container id="home">
             <Slide direction="left">
@@ -37,8 +37,9 @@ const ResumeHeader = () => {
     );
 };
     
-export default ResumeHeader;
+export default ResHeader;
 
 const Container = styled.div``;
 const Texts = styled.div``;
 const Buttons = styled.div``;
+const Social = styled.div``;
