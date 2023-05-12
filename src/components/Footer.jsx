@@ -23,9 +23,9 @@ const Footer = () => {
                 <Slide direction="left" delay={1}>
                     <h1>Portfolio</h1>
                 </Slide>
-                <div className="address">
+                <div className="location">
                     <Slide direction="left">
-                        <h1>Address:</h1>
+                        <h1>Location</h1>
                     </Slide>
                     <Slide direction="left"><p>location</p></Slide>
                 </div>
@@ -111,8 +111,91 @@ const Footer = () => {
 
 export default Footer;
 
-const Container = styled.div``;
-const Profile = styled.div``;
-const ArrowUp = styled.div``;
+const Container = styled.div`
+    display: flex;
+    position: relative;
+    margin-top: 2rem;
+    padding: 2rem 0;
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+    @media (max-width: 840px) {
+        width: 90%;
+      }
+      @media (max-width: 650px) {
+        flex-direction: column;
+        gap: 3rem;
+      }`;
+const Profile = styled.div`
+flex: 1;
+.location {
+    padding: 1rem 0;
+    h1 {
+        font-size: 1.2rem;
+    }
+    
+    p {
+        width: 60%;
+        padding-top: .5rem;
+        @media (max-width: 650px) {
+            width: 100%;
+            }
+            }
+            }
+            
+            .links {
+                h1 {
+                    font-size: 1.2rem;
+                    margin-bottom: .5rem;
+                    }
+                    div {
+                        display: flex;
+                        align-items: center;
+                        gap: .5rem;
+                        a {
+                            text-decoration: none;
+                            color: var(--white);
+                            :hover {
+                                color: var(--orange);
+                                }
+                                }
+                                }
+                                }
+                                
+                                .profiles {
+                                    h1 {
+                                        font-size: 1.2rem;
+                                        padding: .5rem;
+                                    }
+                                    .icons {
+                                        display: flex;
+                                        align-items: center;
+                                    }
+                                    span {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        color: #FFF8F4;
+            background-color: transparent; 
+            border: 1px solid var(--white); 
+                                        border-radius: 50%;
+                                        margin-right: .5rem;
+                                        height: 2rem;
+                                        width: 2rem;
+
+                                        :hover {
+                                            background-color: rgba(255, 248, 244, 0.2); 
+                                                                  }
+                                                                  a {
+                                                                    margin-top: 0.2;
+                                                                    color: var(--white);
+                                                                                            }
+                                                                                                                  }
+                                                                                                                                          }
+                                                                                                                                                                  }
+                                                                                                                                                                                            `;
+const ArrowUp = styled.div`
+display: flex;
+`;
 const FormContainer = styled.div``;
 
