@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Hahmlet:wght@100&family=Josefin+Slab:wght@500&family=Just+Me+Again+Down+Here&display=swap');
 
+@font-face {
+  font-family: 'Mothra';
+  src: url('../public/fonts/mothra-webfont.woff2') format('woff2'),
+       url('../public/fonts/mothra-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 *{
   margin: 0;
   padding: 0;
@@ -10,11 +17,11 @@
 }
 
 :root{
-  --background: #718385;
+  --background: rgb(113, 131, 133);
   --dark: #13262a;
-  --orange: #945632;
+  --orange: rgb(175, 99, 54);
   --white: #FFF8F4;
-  --green: #5b5d30;
+  --green: rgb(91, 93, 48);
   --hand: font-family: 'Just Me Again Down Here', cursive;
   --thin: font-family: 'Josefin Slab', serif;
   --funky: font-family: 'Goudy Bookletter 1911', serif;
@@ -32,6 +39,10 @@ body{
 }
 .red{
   color: var(--orange);
+}
+
+.dark {
+  color: var(--dark);
 }
 
 .slick-list, .slick-slider, .slick-track{

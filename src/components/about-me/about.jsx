@@ -48,12 +48,13 @@ const Container = styled.div`
     font-size: 1.8rem;
     }
     h1 {
-        font-size: 3rem;
-    color: var(--orange);
-    font-family: 'Goudy Bookletter 1911', serif;
+        font-size: 4rem;
+    color: var(--white);
+    font-family: 'Mothra', serif;
     font-weight: 300;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.1rem;
     text-transform: uppercase;
+    text-shadow: 4px 3px 4px rgba(91, 93, 48, 1);
     }
 
     @media (max-width: 840px) {

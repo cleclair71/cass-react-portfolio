@@ -9,9 +9,9 @@ const ProfHeader = () => {
             <Slide direction="left">
                 <Texts>
                     <h4>
-                        hey, <span className="red">i'm</span>
+                        hey, <span className="dark">i'm</span>
                     </h4>
-                    <h1 className="red">cassie leclair</h1>
+                    <h1 className="red">cassie <br/> leclair</h1>
                     <h3 className="black">Front End Web Developer</h3>
                     <p>I'm a Front End Web Developer based in the Greater Toronto Area. I have a passion for creating beautiful, responsive websites and applications. I'm currently seeking a full-time position as a Front End Web Developer.</p>
                     <button>Call me</button>
@@ -66,13 +66,14 @@ h4 {
     font-size: 1.8rem;
 }
 h1 {
-    font-size: 3rem;
+    font-size: 5rem;
     color: var(--white);
-    font-family: 'Goudy Bookletter 1911', serif;
-    font-weight: 800;
+    font-family: 'Mothra', serif;
     letter-spacing: 0.2rem;
     text-transform: uppercase;
     padding-bottom: .2rem;
+    text-shadow: 4px 3px 4px rgba(19, 38, 42, 1);
+    padding-top: 1rem;
 }
 h3 {
     font-size: 1.4rem;
@@ -102,6 +103,7 @@ h3 {
         letter-spacing: 0.2rem;
         font-size: .8rem;
         text-transform: uppercase;
+        border-radius: 5px;
         :hover {
             background-color: rgba(255, 248, 244, 0.2);
         }

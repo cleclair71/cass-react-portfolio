@@ -21,7 +21,7 @@ const Footer = () => {
         <Container id="footer">
             <Profile>
                 <Slide direction="left" delay={1}>
-                    <h1>CONTACT</h1>
+                    <h1 id="heading">CONTACT</h1>
                 </Slide>
                 <div className="location">
                     
@@ -132,10 +132,19 @@ const Container = styled.div`
       }`;
 const Profile = styled.div`
 flex: 1;
+#heading {
+    font-family: 'Mothra', serif;
+    color: var(--white);
+    text-shadow: 4px 3px 4px rgba(91, 93, 48);
+    font-size: 3rem;
+    font-weight: 200;
+}
 .location {
     padding: 1rem 0;
     h1 {
         font-size: 1.2rem;
+        margin-bottom: .5rem;
+        font-family: 'josfin sans' , sans-serif;
     }
     
     p {

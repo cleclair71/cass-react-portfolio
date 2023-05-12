@@ -56,7 +56,7 @@ const Projects = () => {
   return (
     <Container id='project'>
         <Zoom>
-            <h1>Recent <span className="green">Projects</span></h1>
+            <h1>Recent Projects</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto doloremque 
             voluptate excepturi porro sed totam quis animi dolorum rerum earum.</p>
         </Zoom>
@@ -80,7 +80,11 @@ const Container = styled.div`
         width: 90%;
     }
     h1{
-        font-size: 1.9rem;
+        font-size: 4rem;
+        font-family: 'Mothra', serif;
+        text-shadow: 4px 3px 4px rgba(19, 38, 42, 1);
+        letter-spacing: 0.2rem;
+        text-transform: uppercase;
     }
 
     p{

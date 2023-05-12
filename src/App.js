@@ -8,6 +8,7 @@ import Resume from './components/resume/Resume.jsx';
 import { useEffect } from 'react';
 import Footer from './components/Footer.jsx';
 
+
 function useScrollToHash() {
   const { hash } = useLocation();
 
