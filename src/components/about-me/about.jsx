@@ -54,7 +54,7 @@ const Container = styled.div`
     font-weight: 300;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
-    text-shadow: 4px 3px 4px rgba(91, 93, 48, 1);
+    text-shadow: 4px 3px 4px #000;
     }
 
     @media (max-width: 840px) {

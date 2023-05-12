@@ -15,7 +15,9 @@ const Resume = () => {
         </ResBanner>
         <Top />
         <Content />
+        <ChangeColor>
         <Footer />
+        </ChangeColor>
     </div>
   );
 };
@@ -32,4 +34,7 @@ height: 100vh;
 height: 100%;
 padding-bottom: 2rem;
 }
+`;
+const ChangeColor = styled.div`
+background: var(--dark);
 `;

@@ -14,9 +14,9 @@ const ProfHeader = () => {
                     <h1 className="red">cassie <br/> leclair</h1>
                     <h3 className="black">Front End Web Developer</h3>
                     <p>I'm a Front End Web Developer based in the Greater Toronto Area. I have a passion for creating beautiful, responsive websites and applications. I'm currently seeking a full-time position as a Front End Web Developer.</p>
-                    <button>Call me</button>
+                    <button>Contact</button>
                     <Social>
-                        <p>Check out my</p>
+                        
                         <div className="social-icons">
                             <span>
                                 <a href="/">

@@ -135,7 +135,7 @@ flex: 1;
 #heading {
     font-family: 'Mothra', serif;
     color: var(--white);
-    text-shadow: 4px 3px 4px rgba(91, 93, 48);
+    text-shadow: 4px 3px 4px #000000;
     font-size: 3rem;
     font-weight: 200;
 }
@@ -145,9 +145,15 @@ flex: 1;
         font-size: 1.2rem;
         margin-bottom: .5rem;
         font-family: 'josfin sans' , sans-serif;
+        text-transform: uppercase;
+        font-weight: 200;
     }
     
     p {
+        color: var(--background);
+                font-family: 'josfin sans' , sans-serif;
+        text-transform: uppercase;
+        font-weight: 200;
         width: 60%;
         padding-top: .5rem;
         @media (max-width: 650px) {
@@ -158,6 +164,9 @@ flex: 1;
             
     .links {
         h1 {
+            font-family: 'josfin sans' , sans-serif;
+        text-transform: uppercase;
+        font-weight: 200;
              font-size: 1.2rem;
              margin-bottom: .5rem;
          }
@@ -167,7 +176,10 @@ flex: 1;
             gap: .5rem;
             a {
                 text-decoration: none;
-                color: var(--white);
+                color: var(--background);
+                font-family: 'josfin sans' , sans-serif;
+        text-transform: uppercase;
+        font-weight: 200;
                 :hover {
                     color: var(--orange);
                  }
@@ -177,8 +189,12 @@ flex: 1;
                                 
     .profiles {
         h1 {
+            font-family: 'josfin sans' , sans-serif;
+        text-transform: uppercase;
+        font-weight: 200;
             font-size: 1.2rem;
-            padding: .5rem;
+            padding-top: 1rem;
+            padding-bottom: .5rem;
         }
 
         .icons {

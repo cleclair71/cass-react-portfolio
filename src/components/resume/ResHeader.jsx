@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { AiOutlineGithub, AiOutlineLinkedin, AiOutlineDownload } from 'react-icons/ai';
+import { AiOutlineDownload } from 'react-icons/ai';
 import { Slide } from 'react-awesome-reveal';
 
 const ResHeader = () => {
@@ -16,21 +16,7 @@ const ResHeader = () => {
                             Resume <AiOutlineDownload />
                         </button>
                     </Buttons>
-                    <Social>
-                        <p>Check out my</p>
-                        <div className="social-icons">
-                            <span>
-                                <a href="/">
-                                    <AiOutlineGithub />
-                                </a>
-                            </span>
-                            <span>
-                                <a href="/">
-                                    <AiOutlineLinkedin />
-                                </a>
-                            </span>
-                        </div>
-                    </Social>
+                    
                 </Texts>
             </Slide>
         </Container>
@@ -39,7 +25,63 @@ const ResHeader = () => {
     
 export default ResHeader;
 
-const Container = styled.div``;
-const Texts = styled.div``;
-const Buttons = styled.div``;
-const Social = styled.div``;
+const Container = styled.div`
+background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(1px);
+    display: flex;
+    padding-top: 3.2rem;
+    padding: 2rem;
+    gap: 2rem;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1200px;
+    border-radius: 10px;
+    @media (max-width: 840px) {
+        width: 90%;
+    }
+    @media (max-width: 640px) {
+        flex-direction: column;
+    }`;
+const Texts = styled.div`
+flex: 1;
+h1 {
+    font-size: 5rem;
+    color: var(--white);
+    font-family: 'Mothra', serif;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    padding-bottom: .2rem;
+    text-shadow: 4px 3px 4px rgba(19, 38, 42, 1);
+    padding-top: 1rem;
+}
+p {
+    font-size: 1.2rem;
+    font-weight: 200;
+    font-family: 'Josefin Slab', serif;
+    color: rgba(255, 248, 244, 0.9);
+    
+}`;
+const Buttons = styled.div`
+margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    button {
+        background: none;
+        border: 1px solid var(--white);
+        padding: 0.7rem 1.4rem;
+        cursor: pointer;
+        font-weight: 600;
+        filter: drop-shadow(0px 8px 8px #13262a);
+        color: var(--white);
+        font-family: 'Josefin Slab', serif;
+        letter-spacing: 0.2rem;
+        font-size: .8rem;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        border-radius: 5px;
+        :hover {
+            background-color: rgba(255, 248, 244, 0.2);
+        }
+    }`;

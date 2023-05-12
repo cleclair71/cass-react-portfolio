@@ -11,6 +11,7 @@ const Content = () => {
     return (
         <Container>
             <Section>
+                
                 <Grid>
                     <Slide direction="left">
                         <h2>About Me</h2>
@@ -86,9 +87,42 @@ const Content = () => {
 
 export default Content;
 
-const Container = styled.div``;
-const Section = styled.div``;
-const Grid = styled.div``;
-const RoundedImage = styled.img``;
+const Container = styled.div`
+display: flex;
+    flex-direction: column;
+    padding: 3.2rem;
+    gap: 2rem;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1200px;
+    @media (max-width: 840px) {
+        width: 90%;
+    }
+    @media (max-width: 640px) {
+        padding: 2rem;
+    }`;
+const Section = styled.div`
+margin-bottom: 2rem;
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    :hover {
+        color: #f04;
+    }
+}
+p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    transition: max-height 0.2s ease-out;
+    overflow: hidden;
+}`;
+const Grid = styled.div`
+display: grid;
+    grid-template-columns: 2fr 1fr 3fr;
+    gap: 1rem;`;
+const RoundedImage = styled.img`
+width: 100%;
+    border-radius: 50%;`;
 
                     

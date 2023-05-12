@@ -5,7 +5,7 @@ const Card = (props) => {
     const {Icon, title, description} = props;
     return (
         <Container>
-            <span className="red"><Icon /></span>
+            <span className="dark"><Icon /></span>
             <h3>{title}</h3>
             <p>{description}</p>
         </Container>
@@ -19,6 +19,8 @@ const Container = styled.div`
     background: var(--background)!important;
     padding: 1rem;
     text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #000;
     span {
         font-size: 4rem;
         }
