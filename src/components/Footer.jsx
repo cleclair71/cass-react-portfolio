@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import { MdAlternateEmail } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
-import { HiOutlineMailOpen } from "react-icons/hi";
+import { HiOutlineMailOpen, HiOutlineLocationMarker } from "react-icons/hi";
 import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
 // import { BsFacebook, BsSlack } from "react-icons/bs";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
@@ -21,13 +21,17 @@ const Footer = () => {
         <Container id="footer">
             <Profile>
                 <Slide direction="left" delay={1}>
-                    <h1>Portfolio</h1>
+                    <h1>CONTACT</h1>
                 </Slide>
                 <div className="location">
+                    
                     <Slide direction="left">
                         <h1>Location</h1>
                     </Slide>
-                    <Slide direction="left"><p>location</p></Slide>
+                    
+                    <Slide direction="left"><p><span>
+                        <HiOutlineLocationMarker />
+                    </span> Toronto, ON</p></Slide>
                 </div>
                 <div className="links">
                     <Slide direction="left">
@@ -140,60 +144,64 @@ flex: 1;
         @media (max-width: 650px) {
             width: 100%;
             }
-            }
-            }
+         }
+     }
             
-            .links {
-                h1 {
-                    font-size: 1.2rem;
-                    margin-bottom: .5rem;
-                    }
-                    div {
-                        display: flex;
-                        align-items: center;
-                        gap: .5rem;
-                        a {
-                            text-decoration: none;
-                            color: var(--white);
-                            :hover {
-                                color: var(--orange);
-                                }
-                                }
-                                }
-                                }
+    .links {
+        h1 {
+             font-size: 1.2rem;
+             margin-bottom: .5rem;
+         }
+        div {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            a {
+                text-decoration: none;
+                color: var(--white);
+                :hover {
+                    color: var(--orange);
+                 }
+            }
+         }
+    }
                                 
-                                .profiles {
-                                    h1 {
-                                        font-size: 1.2rem;
-                                        padding: .5rem;
-                                    }
-                                    .icons {
-                                        display: flex;
-                                        align-items: center;
-                                    }
-                                    span {
-                                        display: flex;
-                                        align-items: center;
-                                        justify-content: center;
-                                        color: #FFF8F4;
-            background-color: transparent; 
-            border: 1px solid var(--white); 
-                                        border-radius: 50%;
-                                        margin-right: .5rem;
-                                        height: 2rem;
-                                        width: 2rem;
+    .profiles {
+        h1 {
+            font-size: 1.2rem;
+            padding: .5rem;
+        }
 
-                                        :hover {
-                                            background-color: rgba(255, 248, 244, 0.2); 
-                                                                  }
-                                                                  a {
-                                                                    margin-top: 0.2;
-                                                                    color: var(--white);
-                                                                                            }
-                                                                                                                  }
-                                                                                                                                          }
-                                                                                                                                                                  }
-                                                                                                                                                                                            `;
+        .icons {
+            display: flex;
+            align-items: center;
+        
+
+            span {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #FFF8F4;
+                background-color: transparent; 
+                border: 1px solid var(--white); 
+                border-radius: 50%;
+                margin-right: .5rem;
+                height: 2rem;
+                width: 2rem;
+
+                :hover {
+                    background-color: rgba(255, 248, 244, 0.2); 
+                }
+
+                a {
+                    margin-top: 0.2;
+                    color: var(--white);
+                }
+            }
+        }
+    }
+      
+`;
 const ArrowUp = styled.div`
 display: flex;
 height: 2rem;
@@ -250,6 +258,7 @@ h1 {
                 padding: 1rem .5rem;
                 width: 100%;
                 transition: background 0.3s ease;
+                cursor: pointer;
         }
             span {
                 display: flex;
