@@ -196,6 +196,98 @@ flex: 1;
                                                                                                                                                                                             `;
 const ArrowUp = styled.div`
 display: flex;
-`;
-const FormContainer = styled.div``;
+height: 2rem;
+width: 2rem;
+background-color: transparent;
+border: 1px solid var(--white);
+border-radius: 50%;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+font-size: 1.4rem;
+margin-top: 2rem;
+
+:hover {
+    background-color: rgba(255, 248, 244, 0.2);
+    }
+    @media (max-width: 650px) {
+        position: absolute;
+        right: 3rem;
+        top: 16rem;
+        }
+
+    `;
+const FormContainer = styled.div`
+flex: 1;
+h1 {
+    font-size: 1.2rem;
+    padding: .5rem;
+    }
+    form {
+        background-color: var(--background);
+        padding: .8rem;
+        border-radius: 5px;
+        
+        .name,
+        .email, 
+        .message {
+            display: flex;
+            border: 1px solid var(--white);
+            margin-bottom: .5rem;
+            border-radius: 5px;
+            box-shadow: 0 8px 8px #13262ab7;
+
+      &:focus-within {
+        background-color: rgba(255, 248, 244, 0.2);
+      }
+
+            input,
+            textarea {
+                background-color: transparent;
+                border: none;
+                outline: none;
+                color: var(--white);
+                padding: 1rem .5rem;
+                width: 100%;
+                transition: background 0.3s ease;
+        }
+            span {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #FFF8F4;
+                background-color: transparent;
+                width: 3rem;
+            }
+            .messageIcon {
+                align-items: flex-start;
+                padding-top: .5rem;
+            }
+        }
+input::placeholder,
+textarea::placeholder { 
+    color: var(--dark);
+    opacity: .6;
+    font-family: 'josefin sans', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    }
+        button {
+            background: var(--background);
+            border: 1px solid var(--white);
+            padding: 0.7rem 1.4rem;
+            cursor: pointer;
+            font-weight: 600;
+            box-shadow: 0 8px 8px #13262ab7;
+            color: var(--white);
+            font-family: 'josefin sans', sans-serif;
+            letter-spacing: 0.2rem;
+            border-radius: 5px;
+            text-transform: uppercase;
+
+            :hover {
+                background-color: rgba(255, 248, 244, 0.2);
+
+            }
+                `;
 

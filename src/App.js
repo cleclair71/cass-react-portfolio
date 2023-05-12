@@ -6,6 +6,7 @@ import About from './components/about-me/about.jsx';
 import Projects from './components/Portfolio/Projects.jsx';
 import Resume from './components/resume/Resume.jsx';
 import { useEffect } from 'react';
+import Footer from './components/Footer.jsx';
 
 function useScrollToHash() {
   const { hash } = useLocation();
@@ -39,6 +40,9 @@ function App() {
               <div id="projects">
                 <Projects />
               </div>
+              <ChangeColor>
+                <Footer />
+              </ChangeColor>
             </>
           }/>
           <Route path="/resume" element={
