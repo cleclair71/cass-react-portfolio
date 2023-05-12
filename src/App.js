@@ -22,9 +22,9 @@ function useScrollToHash() {
 
 
 function App() {
-  useScrollToHash();
   return (
     <Router>
+      <ScrollToHash />
       <Container>
         <Routes>
           <Route path="/" element={
@@ -55,6 +55,11 @@ function App() {
       </Container>
     </Router>
   );
+}
+
+function ScrollToHash() {
+  useScrollToHash();
+  return null;
 }
 
 export default App;
