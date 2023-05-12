@@ -23,7 +23,14 @@ const Top = () => {
 
 export default Top;
 
-const Container = styled.div``;
+const Container = styled.div`
+display: grid;
+position: relative;
+grid-template-columns: 2fr 1fr 3fr;
+@media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }`;
 const Circle = styled.div``;
 const Column = styled.div``;
 const Line = styled.hr``;
