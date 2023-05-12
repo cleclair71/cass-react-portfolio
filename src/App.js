@@ -4,7 +4,7 @@ import styled from "styled-components";
 import ProfHeader from './components/Banner/ProfHeader.jsx';
 import About from './components/about-me/about.jsx';
 import Projects from './components/Portfolio/Projects.jsx';
-import Resume from './components/Resume.jsx';
+import Resume from './components/resume/Resume.jsx';
 import { useEffect } from 'react';
 
 function useScrollToHash() {
