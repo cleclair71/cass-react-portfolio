@@ -4,10 +4,10 @@ import { MdAlternateEmail } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
-import { BsFacebook, BsSlack } from "react-icons/bs";
+// import { BsFacebook, BsSlack } from "react-icons/bs";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
 import { Slide, Zoom, Fade } from "react-awesome-reveal";
-import { Form } from 'react-router-dom';
+// import { Form } from 'react-router-dom';
 
 const Footer = () => {
     const scrollUp = () => {
@@ -80,7 +80,7 @@ const Footer = () => {
                     </ArrowUp>
                 </Fade>
             </Profile>
-            <Form>
+            <FormContainer>
                 <Slide direction="right">
                     <form>
                         <div className="name">
@@ -104,7 +104,7 @@ const Footer = () => {
                         <button>Submit</button>
                     </form>
                 </Slide>
-            </Form>
+            </FormContainer>
         </Container >
     );
 };
@@ -114,4 +114,5 @@ export default Footer;
 const Container = styled.div``;
 const Profile = styled.div``;
 const ArrowUp = styled.div``;
+const FormContainer = styled.div``;
 

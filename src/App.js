@@ -43,10 +43,7 @@ function App() {
           }/>
           <Route path="/resume" element={
             <>
-              <Banner>
-                <Header />
-                <ProfHeader />
-              </Banner>
+
               <Resume />
 
             </>
