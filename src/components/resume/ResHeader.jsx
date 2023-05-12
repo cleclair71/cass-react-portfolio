@@ -8,7 +8,7 @@ const ResHeader = () => {
         <Container id="home">
             <Slide direction="left">
                 <Texts>
-                <h1 className="red">I'm Cassie LeClair.</h1>
+                <h1>I'm Cassie LeClair.</h1>
                     <p>I'm a Front End Web Developer based in the Greater Toronto Area. I have a passion for creating beautiful, responsive websites and applications. I'm currently seeking a full-time position as a Front End Web Developer.</p>
                     <Buttons>
                         <button>Contact</button>
@@ -52,7 +52,7 @@ h1 {
     text-transform: uppercase;
     padding-bottom: .2rem;
     text-shadow: 4px 3px 4px rgba(19, 38, 42, 1);
-    padding-top: 1rem;
+    padding-left: 1rem;
 }
 p {
     font-size: 1.2rem;

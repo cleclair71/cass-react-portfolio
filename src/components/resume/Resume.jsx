@@ -12,12 +12,12 @@ const Resume = () => {
       <ResBanner>
         <Header />
         <ResHeader />
-        </ResBanner>
-        <Top />
-        <Content />
-        <ChangeColor>
+      </ResBanner>
+      <Top />
+      <Content />
+      <ChangeColor>
         <Footer />
-        </ChangeColor>
+      </ChangeColor>
     </div>
   );
 };

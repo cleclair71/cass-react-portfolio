@@ -25,7 +25,7 @@ const Content = () => {
                 </Grid>
             </Section>
             <Section>
-            <h2 onClick={() => {setSkillsOpen(!isSkillsOpen); setBar(!bar)}}>Experience</h2>
+            <h2 onClick={() => {setExperienceOpen(!isExperienceOpen); setBar(!bar)}}>Experience</h2>
                 {isExperienceOpen && <Grid>
                     <Slide direction="left">
                         <div>Company name...</div>
@@ -41,11 +41,12 @@ const Content = () => {
                     </Slide>
                 </Grid>}
             </Section>
+            
             <Section>
-            <h2 onClick={() => {setSkillsOpen(!isSkillsOpen); setBar(!bar)}}>Skills</h2>
-                {isSkillsOpen && <Grid>
+            <h2 onClick={() => {setEducationOpen(!isEducationOpen); setBar(!bar)}}>Education</h2>
+                {isEducationOpen && <Grid>
                     <Slide direction="left">
-                        <div>Your skills go here...</div>
+                        <div>Company name...</div>
                     </Slide>
                     <Slide direction="up">
                         <div>Year...</div>
@@ -57,12 +58,6 @@ const Content = () => {
                         </div>
                     </Slide>
                 </Grid>}
-            </Section>
-            <Section>
-            <h2 onClick={() => {setSkillsOpen(!isSkillsOpen); setBar(!bar)}}>Education</h2>
-                {isEducationOpen && <p>
-                   education content goes here...
-                </p>}
             </Section>
             <Section>
             <h2 onClick={() => {setSkillsOpen(!isSkillsOpen); setBar(!bar)}}>Skills</h2>
@@ -98,8 +93,10 @@ display: flex;
     @media (max-width: 840px) {
         width: 90%;
     }
+  
     @media (max-width: 640px) {
         padding: 2rem;
+        
     }`;
 const Section = styled.div`
 margin-bottom: 2rem;
@@ -107,8 +104,25 @@ h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
     cursor: pointer;
-    :hover {
-        color: #f04;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: var(--white);
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.3s ease-in-out;
+        
+    }
+
+    &:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
     }
 }
 p {
