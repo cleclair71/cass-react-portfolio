@@ -1,40 +1,59 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Header from './components/Banner/Header.jsx';
 import styled from "styled-components";
 import ProfHeader from './components/Banner/ProfHeader.jsx';
 import About from './components/about-me/about.jsx';
 import Projects from './components/Portfolio/Projects.jsx';
-import Resume from './components/Resume/Resume.jsx';
+import Resume from './components/Resume.jsx';
+import { useEffect } from 'react';
+
+function useScrollToHash() {
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    setTimeout(() => {
+      const id = hash.replace('#', '');
+      const element = document.getElementById(id);
+      if (element) element.scrollIntoView({ behavior: 'smooth' });
+    }, 0);
+  }, [hash]);
+}
 
 
 
 function App() {
+  useScrollToHash();
   return (
     <Router>
-   <Container>
-    <Switch>
-    <Route exact path="/">
-    <Banner>
-    <Header />
-    <ProfHeader />
-    </Banner>
-    <ChangeColor>
-    <About />
-    </ChangeColor>
-    <Projects />
-    </Route>
-    <Route path="/resume">
-    <Banner>
-              <Header />
-            </Banner>
-            <Resume />
-            <Banner>
-              <ProfHeader />
-            </Banner>
-          </Route>
-    </Switch>
-   </Container>
-   </Router>
+      <Container>
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Banner>
+                <Header />
+                <ProfHeader />
+              </Banner>
+              <ChangeColor id="about">
+                <About />
+              </ChangeColor>
+              <div id="projects">
+                <Projects />
+              </div>
+            </>
+          }/>
+          <Route path="/resume" element={
+            <>
+              <Banner>
+                <Header />
+                <ProfHeader />
+              </Banner>
+              <Resume />
+
+            </>
+          }/>
+        </Routes>
+      </Container>
+    </Router>
   );
 }
 

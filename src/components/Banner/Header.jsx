@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { TfiHeart } from 'react-icons/tfi';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     const [bar, setBar] = useState(false);
@@ -11,10 +12,10 @@ const Header = () => {
                 <h1>portfolio</h1>
             </Logo>
             <Nav bar={bar}>
-                <span><a href="#about">about me</a></span>
-                <span><a href="#project">portfolio</a></span>
-                <span><a href="#footer">contact</a></span>
-                <span><a href="#resume">resume</a></span>
+                <span><a href="/#about">about me</a></span>
+                <span><a href="/#projects">portfolio</a></span>
+                <span><a href="/#footer">contact</a></span>
+                <span><Link to="/resume">resume</Link></span>
             </Nav>
             <div onClick={() => setBar(!bar)} className="bars">
                 <div className="bar"></div>
