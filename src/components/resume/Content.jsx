@@ -18,10 +18,10 @@ const Content = () => {
                         <h2>About Me</h2>
                     </Slide>
                     <Slide direction="up">
-                        <RoundedImage src="/path/to/your/image.jpg" alt="Your Name" />
+                        <RoundedImage src="/assets/IMG_5541.jpg" alt="Cassie LeClair" />
                     </Slide>
                     <Slide direction="right">
-                        <p>info</p>
+                        <p>As a front-end developer, I specialize in creating and styling front-end components that fulfill the requirements of our mockups and user stories. My skills include CSS, SASS, Bootstrap, React, HTML, and JavaScript. With my expertise in front-end development, I am dedicated to delivering high-quality user experiences and ensuring that my designs are integrated seamlessly.</p>
                     </Slide>
                 </Grid>
             </Section>
@@ -191,13 +191,22 @@ const Content = () => {
 export default Content;
 
 const Container = styled.div`
-display: flex;
+display: grid;
     flex-direction: column;
     padding: 3.2rem;
     gap: 2rem;
     margin: 0 auto;
     width: 80%;
     max-width: 1200px;
+    
+
+    p {
+        margin-left: 2rem;
+    }
+
+    strong {
+        margin-left: 2rem;
+    }
     @media (max-width: 840px) {
         width: 90%;
     }
@@ -208,6 +217,7 @@ display: flex;
     }`;
 const Section = styled.div`
 margin-bottom: 2rem;
+border-bottom: .2px solid rgba(255, 248, 244, 0.4);
 h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -219,7 +229,7 @@ h2 {
         position: absolute;
         bottom: 0;
         left: 0;
-        width: 100%;
+        width: 30%;
         height: 2px;
         background-color: var(--white);
         transform: scaleX(0);
@@ -245,5 +255,7 @@ display: grid;
     gap: 1rem;`;
 const RoundedImage = styled.img`
 width: 100%;
-    border-radius: 50%;`;
+    border-radius: 50%;
+    margin: 0 auto;
+    `;
 
