@@ -6,12 +6,13 @@ const Content = () => {
     const [isSkillsOpen, setSkillsOpen] = useState(false);
     const [isEducationOpen, setEducationOpen] = useState(false);
     const [isExperienceOpen, setExperienceOpen] = useState(false);
+    const [isCertificationsOpen, setCertificationsOpen] = useState(false);
     const [bar, setBar] = useState(false);
 
     return (
         <Container>
             <Section>
-                
+
                 <Grid>
                     <Slide direction="left">
                         <h2>About Me</h2>
@@ -21,46 +22,153 @@ const Content = () => {
                     </Slide>
                     <Slide direction="right">
                         <p>info</p>
-                        </Slide>
+                    </Slide>
                 </Grid>
             </Section>
             <Section>
-            <h2 onClick={() => {setExperienceOpen(!isExperienceOpen); setBar(!bar)}}>Experience</h2>
+                <h2 onClick={() => { setExperienceOpen(!isExperienceOpen); setBar(!bar) }}>Experience</h2>
                 {isExperienceOpen && <Grid>
                     <Slide direction="left">
-                        <div>Company name...</div>
+                        <div>Toronto Zoo</div>
                     </Slide>
                     <Slide direction="up">
-                        <div>Year...</div>
+                        <div>2021-2022</div>
                     </Slide>
                     <Slide direction="right">
                         <div>
-                            <strong>Job Title...</strong>
+                            <strong>Horticultural Technician</strong>
                             <p>Description...</p>
+                        </div>
+                    </Slide>
+
+                    <Slide direction="left">
+                        <div>Self-Employed</div>
+                    </Slide>
+                    <Slide direction="up">
+                        <div>2019-Present</div>
+                    </Slide>
+                    <Slide direction="right">
+                        <div>
+                            <strong>Certified Personal Trainer</strong>
+                            <p>Certified Personal Trainer conducting one-on-one training sessions in state of the art fitness studio. Adept in creating a warm environment in which clients of all ages can successfully achieve health and wellness goals.</p>
+                        </div>
+                    </Slide>
+
+                    <Slide direction="left">
+                        <div>Surmesur</div>
+                    </Slide>
+                    <Slide direction="up">
+                        <div>2017-2019</div>
+                    </Slide>
+                    <Slide direction="right">
+                        <div>
+                            <strong>Assistant Manager</strong>
+                            <p>Certified Personal Trainer conducting one-on-one training sessions in state of the art fitness studio. Adept in creating a warm environment in which clients of all ages can successfully achieve health and wellness goals.</p>
+                        </div>
+                    </Slide>
+
+                    <Slide direction="left">
+                        <div>Fulford Place Museum</div>
+                    </Slide>
+                    <Slide direction="up">
+                        <div>2013-2016</div>
+                    </Slide>
+                    <Slide direction="right">
+                        <div>
+                            <strong>Museum Supervisor</strong>
+                            <p>Certified Personal Trainer conducting one-on-one training sessions in state of the art fitness studio. Adept in creating a warm environment in which clients of all ages can successfully achieve health and wellness goals.</p>
                         </div>
                     </Slide>
                 </Grid>}
             </Section>
-            
+
             <Section>
-            <h2 onClick={() => {setEducationOpen(!isEducationOpen); setBar(!bar)}}>Education</h2>
+                <h2 onClick={() => { setEducationOpen(!isEducationOpen); setBar(!bar) }}>Education</h2>
                 {isEducationOpen && <Grid>
                     <Slide direction="left">
-                        <div>Company name...</div>
+                        <div>University of Toronto Bootcamp</div>
                     </Slide>
                     <Slide direction="up">
-                        <div>Year...</div>
+                        <div>2023</div>
                     </Slide>
                     <Slide direction="right">
                         <div>
-                            <strong>Job Title...</strong>
-                            <p>Description...</p>
+                            <strong>Full-Stack Web Development</strong>
+                            <p>A rigorous and fast-paced, condensed course offered by edX Bootcamps and the University of Toronto that teaches the practical, technical skills that will enable me to build robust web applications.</p>
+                        </div>
+                    </Slide>
+                    <Slide direction="left">
+                        <div>Trent University</div>
+                    </Slide>
+                    <Slide direction="up">
+                        <div>2012-2017</div>
+                    </Slide>
+                    <Slide direction="right">
+                        <div>
+                            <strong>Ancient Greek & Roman Studies & Archaeology</strong>
+                            <p>The study of civilizations in an interdisciplinary fashion, by drawing upon historical, literary, and archaeological evidence.</p>
                         </div>
                     </Slide>
                 </Grid>}
             </Section>
             <Section>
-            <h2 onClick={() => {setSkillsOpen(!isSkillsOpen); setBar(!bar)}}>Skills</h2>
+                <h2 onClick={() => { setCertificationsOpen(!isCertificationsOpen); setBar(!bar) }}>Certifications</h2>
+                {isCertificationsOpen && <Grid>
+                    <Slide direction="left">
+                        <div>Git Certification Course</div>
+                    </Slide>
+                    <Slide direction="up">
+                        <div>2023</div>
+                    </Slide>
+                    <Slide direction="right">
+                        <div>
+                            <strong>Google Developers</strong>
+                            <p>Git BASH · Git Commands · Version Control</p>
+                        </div>
+                    </Slide>
+
+                    <Slide direction="left">
+                        <div>HTML Advanced Certification Course</div>
+                    </Slide>
+                    <Slide direction="up">
+                        <div>2023</div>
+                    </Slide>
+                    <Slide direction="right">
+                        <div>
+                            <strong>Google Developers</strong>
+                            <p>HTML5 · Semantic HTML · Multimedia Elementsl</p>
+                        </div>
+                    </Slide>
+
+                    <Slide direction="left">
+                        <div>JavaScript Certification Course</div>
+                    </Slide>
+                    <Slide direction="up">
+                        <div>2023</div>
+                    </Slide>
+                    <Slide direction="right">
+                        <div>
+                            <strong>Google Developers</strong>
+                            <p>Variables · strings · Functions</p>
+                        </div>
+                    </Slide>
+
+                    <Slide direction="left">
+                        <div>SASS Certification Course</div>
+                    </Slide>
+                    <Slide direction="up">
+                        <div>2023</div>
+                    </Slide>
+                    <Slide direction="right">
+                        <div>
+                            <strong>Google Developers</strong>
+                            <p>Code Nesting · Mixins · Operations and Functions</p>
+                        </div>
+                    </Slide>
+                </Grid>}
+            </Section>
+            <Section>
+                <h2 onClick={() => { setSkillsOpen(!isSkillsOpen); setBar(!bar) }}>Skills</h2>
                 {isSkillsOpen && <Grid>
                     <Slide direction="left">
                         <div>Your skills go here...</div>
@@ -76,7 +184,7 @@ const Content = () => {
                     </Slide>
                 </Grid>}
             </Section>
-            </Container>
+        </Container>
     );
 };
 
@@ -117,7 +225,7 @@ h2 {
         transform: scaleX(0);
         transform-origin: right;
         transition: transform 0.3s ease-in-out;
-        
+
     }
 
     &:hover::after {
@@ -139,4 +247,3 @@ const RoundedImage = styled.img`
 width: 100%;
     border-radius: 50%;`;
 
-                    
