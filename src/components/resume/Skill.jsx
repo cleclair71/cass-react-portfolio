@@ -5,21 +5,20 @@ import SkillBar from 'react-skillbars';
 
 const skills = [
     {type: "HTML", level: 85},
-    {type: "CSS", level: 80},
+    {type: "CSS", level: 85},
     {type: "Javascript", level: 75},
     {type: "React", level: 70},
     {type: "Bootstrap", level: 80},
     {type: "SASS", level: 70},
     {type: "Git", level: 75},
-    {type: "Responsive", level: 85},
-    
+    {type: "Responsive", level: 85},  
   ];
 
   const colors = {
-    "bar": "#3498db",
+    "bar": "#945632",
     "title": {
-      "text": "#fff",
-      "background": "#2980b9"
+      "text": "#FFF8F4",
+      "background": "#13262a"
     }
   }
 
@@ -33,7 +32,7 @@ const skills = [
           <h2 onClick={() => { setSkillsOpen(!isSkillsOpen); setBar(!bar) }}>Skills</h2>
           {isSkillsOpen && <Grid>
             <Slide direction="left">
-              <SkillBar skills={skills} colors={colors} />
+            <SkillBar skills={skills} colors={colors} />
             </Slide>
           </Grid>}
         </Section>
@@ -77,5 +76,6 @@ h2 {
 
     }`;
 
-const Grid = styled.div``;
+const Grid = styled.div`
+padding: 1.5rem;`;
 

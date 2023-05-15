@@ -10,7 +10,7 @@ import { Slide, Zoom } from "react-awesome-reveal";
 // import { Form } from 'react-router-dom';
 
 const Footer = () => {
-
+   
 
     return (
         <Container id="footer">
@@ -47,7 +47,7 @@ const Footer = () => {
                             </span>
                         </Slide>
                         <Slide>
-                            <a href="mailto:">mail</a>
+                            <a href="mailto:cassieleclair71@gmail.com">mail</a>
                         </Slide>
                     </div>
                 </div>
@@ -58,14 +58,14 @@ const Footer = () => {
                     <div className="icons">
                         <Zoom>
                             <span>
-                                <a href="/">
+                                <a href="https://github.com/cleclair71">
                                     <AiFillGithub />
                                 </a>
                             </span>
                         </Zoom>
                         <Zoom>
                             <span>
-                                <a href="/">
+                                <a href="https://www.linkedin.com/in/cassie-leclair-931093b6/">
                                     <AiFillLinkedin />
                                 </a>
                             </span>

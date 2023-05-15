@@ -19,12 +19,12 @@ const ProfHeader = () => {
                         
                         <div className="social-icons">
                             <span>
-                                <a href="/">
+                                <a href="https://github.com/cleclair71">
                                     <AiOutlineGithub />
                                 </a>
                             </span>
                             <span>
-                                <a href="/">
+                                <a href="https://www.linkedin.com/in/cassie-leclair-931093b6/">
                                     <AiOutlineLinkedin />
                                 </a>
                             </span>

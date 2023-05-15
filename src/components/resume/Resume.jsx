@@ -14,9 +14,11 @@ const Resume = () => {
         <Header />
         <ResHeader />
       </ResBanner>
+      <Background>
       <Top />
       <Content />
       <SkillsSection />
+      </Background>
       <ChangeColor>
         <Footer />
       </ChangeColor>
@@ -39,4 +41,10 @@ padding-bottom: 2rem;
 `;
 const ChangeColor = styled.div`
 background: var(--dark);
+`;
+
+const Background = styled.div`
+margin: 0 auto;
+background: var(--dark);
+
 `;

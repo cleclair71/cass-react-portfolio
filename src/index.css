@@ -66,6 +66,15 @@ body{
   pointer-events: none;
 }
 
+.skillbar-bar {
+  border-radius: 5px !important;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.skillbar-title {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
 @media(max-width: 990px){
   .center .slick-center .project{
     transform: scale(1);

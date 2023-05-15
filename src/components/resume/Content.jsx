@@ -254,9 +254,7 @@ p {
     overflow: hidden;
 }
 
-.blurb {
-    padding-top: 4rem;
-}`;
+;`;
 const Grid = styled.div`
 display: grid;
     grid-template-columns: 2fr 1fr 3fr;
@@ -268,7 +266,6 @@ display: grid;
 const RoundedImage = styled.img`
 width: 80%;
     border-radius: 50%;
-    margin: 0 auto;
     @media (max-width: 640px) {
         width: 70%;
     }
