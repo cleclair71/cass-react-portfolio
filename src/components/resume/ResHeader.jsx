@@ -29,6 +29,7 @@ const Container = styled.div`
 background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(1px);
     display: flex;
+   margin: 0 auto;
     padding-top: 3.2rem;
     padding: 2rem;
     gap: 2rem;
@@ -40,7 +41,8 @@ background: rgba(255, 255, 255, 0.2);
         width: 90%;
     }
     @media (max-width: 640px) {
-        flex-direction: column;
+        
+        padding: 1rem;
     }`;
 const Texts = styled.div`
 flex: 1;
@@ -53,18 +55,27 @@ h1 {
     padding-bottom: .2rem;
     text-shadow: 4px 3px 4px rgba(19, 38, 42, 1);
     padding-left: 1rem;
+    @media (max-width: 640px) {
+        font-size: 3rem;
+    }
 }
 p {
     font-size: 1.2rem;
     font-weight: 200;
     font-family: 'Josefin Slab', serif;
     color: rgba(255, 248, 244, 0.9);
+    @media (max-width: 640px) {
+        font-size: 1rem;
+    }
     
 }`;
 const Buttons = styled.div`
 margin-top: 2rem;
     display: flex;
     gap: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     button {
         background: none;
         border: 1px solid var(--white);
@@ -81,6 +92,10 @@ margin-top: 2rem;
         align-items: center;
         gap: 0.5rem;
         border-radius: 5px;
+        @media (max-width: 640px) {
+            padding: 0.5rem 1rem;
+            font-size: 0.7rem;
+        }
         :hover {
             background-color: rgba(255, 248, 244, 0.2);
         }

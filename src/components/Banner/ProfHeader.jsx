@@ -56,6 +56,7 @@ const Container = styled.div`
     }
     @media (max-width: 640px) {
         flex-direction: column;
+        align-items: center;
     }`;
 const Texts = styled.div`
 flex: 1;
@@ -74,6 +75,9 @@ h1 {
     padding-bottom: .2rem;
     text-shadow: 4px 3px 4px rgba(19, 38, 42, 1);
     padding-top: 1rem;
+    @media (max-width: 640px) {
+        font-size: 3.5rem; // Reduced font size for smaller screens
+    }
 }
 h3 {
     font-size: 1.4rem;
@@ -82,12 +86,18 @@ h3 {
     text-transform: uppercase;
     font-family: 'Josefin Slab', serif;
     color: rgba(255, 248, 244, 0.6);
+    @media (max-width: 640px) {
+        font-size: 1.2rem; // Reduced font size for smaller screens
+    }
     }
     p {
         font-size: 1.2rem;
         font-weight: 200;
         font-family: 'Josefin Slab', serif;
         color: rgba(255, 248, 244, 0.9);
+        @media (max-width: 640px) {
+            font-size: 1rem; 
+        }
         
     }
     button {
@@ -164,7 +174,7 @@ img {
         width: 15rem;
     }
     @media (max-width: 640px) {
-        width: 100%;
+        width: 80%;
     }
 }   
 :hover img{

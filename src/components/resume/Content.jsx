@@ -218,6 +218,7 @@ display: grid;
 const Section = styled.div`
 margin-bottom: 2rem;
 border-bottom: .2px solid rgba(255, 248, 244, 0.4);
+
 h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -252,10 +253,17 @@ p {
 const Grid = styled.div`
 display: grid;
     grid-template-columns: 2fr 1fr 3fr;
-    gap: 1rem;`;
+    gap: 1rem;
+    
+    @media (max-width: 640px) {
+        grid-template-columns: 1fr;
+    }`;
 const RoundedImage = styled.img`
 width: 100%;
     border-radius: 50%;
     margin: 0 auto;
+    @media (max-width: 640px) {
+        width: 70%;
+    }
     `;
 
