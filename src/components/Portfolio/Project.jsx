@@ -114,13 +114,13 @@ const Container = styled.div`
             font-weight: 200;
     padding-bottom: 1.2rem;
     text-transform: uppercase;
-    font-family: 'Josefin Slab', serif;
+    font-family: 'Montserrat', sans-serif;
         }
     
         p{
             width: 90%;
             font-size: 0.8rem;
-            font-family: 'Josefin Slab', serif;
+            font-family: 'Montserrat', sans-serif;
             a{
                 margin-left: 0.4rem;
                 color: red;

@@ -29,10 +29,11 @@ const Container = styled.div`
             padding-bottom: 1rem;
             font-family: "Just Me Again Down Here", cursive;
             font-weight: 400;
+            font-family: 'Barlow Condensed', sans-serif;
 
         }
         
         p {
             font-size: 1rem;
-            font-family: "josefin slab", serif;
+            font-family: 'Montserrat', sans-serif;
         }`;

@@ -62,7 +62,7 @@ h1 {
 p {
     font-size: 1.2rem;
     font-weight: 200;
-    font-family: 'Josefin Slab', serif;
+    font-family: 'Montserrat', sans-serif;
     color: rgba(255, 248, 244, 0.9);
     @media (max-width: 640px) {
         font-size: 1rem;
@@ -84,7 +84,7 @@ margin-top: 2rem;
         font-weight: 600;
         filter: drop-shadow(0px 8px 8px #13262a);
         color: var(--white);
-        font-family: 'Josefin Slab', serif;
+        font-family: 'Montserrat', sans-serif;
         letter-spacing: 0.2rem;
         font-size: .8rem;
         text-transform: uppercase;

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Hahmlet:wght@100&family=Josefin+Slab:wght@500&family=Just+Me+Again+Down+Here&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Montserrat:wght@200&display=swap');
+
 @font-face {
   font-family: 'Mothra';
   src: url('../public/fonts/mothra-webfont.woff2') format('woff2'),
@@ -11,7 +13,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: var(--thin);
+  font-family: 'Montserrat', sans-serif;
   scroll-behavior: smooth;
   
 }
@@ -25,6 +27,8 @@
   --hand: font-family: 'Just Me Again Down Here', cursive;
   --thin: font-family: 'Josefin Slab', serif;
   --funky: font-family: 'Goudy Bookletter 1911', serif;
+  /* font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Montserrat', sans-serif; */
 }
 body{
   width: 100%;

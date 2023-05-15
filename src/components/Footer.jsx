@@ -3,19 +3,14 @@ import styled from 'styled-components';
 import { MdAlternateEmail } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 import { HiOutlineMailOpen, HiOutlineLocationMarker } from "react-icons/hi";
-import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 // import { BsFacebook, BsSlack } from "react-icons/bs";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
-import { Slide, Zoom, Fade } from "react-awesome-reveal";
+import { Slide, Zoom } from "react-awesome-reveal";
 // import { Form } from 'react-router-dom';
 
 const Footer = () => {
-    const scrollUp = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-        });
-    };
+
 
     return (
         <Container id="footer">
@@ -24,11 +19,11 @@ const Footer = () => {
                     <h1 id="heading">CONTACT</h1>
                 </Slide>
                 <div className="location">
-                    
+
                     <Slide direction="left">
                         <h1>Location</h1>
                     </Slide>
-                    
+
                     <Slide direction="left"><p><span>
                         <HiOutlineLocationMarker />
                     </span> Toronto, ON</p></Slide>
@@ -78,11 +73,6 @@ const Footer = () => {
 
                     </div>
                 </div>
-                <Fade>
-                    <ArrowUp onClick={scrollUp}>
-                        <AiOutlineArrowUp />
-                    </ArrowUp>
-                </Fade>
             </Profile>
             <FormContainer>
                 <Slide direction="right">
@@ -227,29 +217,7 @@ flex: 1;
     }
       
 `;
-const ArrowUp = styled.div`
-display: flex;
-height: 2rem;
-width: 2rem;
-background-color: transparent;
-border: 1px solid var(--white);
-border-radius: 50%;
-align-items: center;
-justify-content: center;
-cursor: pointer;
-font-size: 1.4rem;
-margin-top: 2rem;
 
-:hover {
-    background-color: rgba(255, 248, 244, 0.2);
-    }
-    @media (max-width: 650px) {
-        position: absolute;
-        right: 3rem;
-        top: 16rem;
-        }
-
-    `;
 const FormContainer = styled.div`
 flex: 1;
 h1 {
@@ -322,6 +290,5 @@ textarea::placeholder {
             :hover {
                 background-color: rgba(255, 248, 244, 0.2);
 
-            }
-                `;
+            }`;
 

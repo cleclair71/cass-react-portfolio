@@ -84,7 +84,7 @@ h3 {
     font-weight: 600;
     padding-bottom: 1.2rem;
     text-transform: uppercase;
-    font-family: 'Josefin Slab', serif;
+    font-family: 'Barlow Condensed', sans-serif
     color: rgba(255, 248, 244, 0.6);
     @media (max-width: 640px) {
         font-size: 1.2rem; // Reduced font size for smaller screens
@@ -93,7 +93,7 @@ h3 {
     p {
         font-size: 1.2rem;
         font-weight: 200;
-        font-family: 'Josefin Slab', serif;
+        font-family: 'Montserrat', sans-serif;
         color: rgba(255, 248, 244, 0.9);
         @media (max-width: 640px) {
             font-size: 1rem; 
@@ -109,7 +109,7 @@ h3 {
         font-weight: 600;
         filter: drop-shadow(0px 8px 8px #13262a);
         color: var(--white);
-        font-family: 'Josefin Slab', serif;
+        font-family: 'Montserrat', sans-serif;
         letter-spacing: 0.2rem;
         font-size: .8rem;
         text-transform: uppercase;

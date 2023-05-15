@@ -18,10 +18,13 @@ const Content = () => {
                         <h2>About Me</h2>
                     </Slide>
                     <Slide direction="up">
-                        <RoundedImage src="/assets/IMG_5541.jpg" alt="Cassie LeClair" />
+                        <ImageWrapper>
+                            <ProfileText>PROFILE</ProfileText>
+                            <RoundedImage src="/assets/IMG_5541.jpg" alt="Cassie LeClair" />
+                        </ImageWrapper>
                     </Slide>
                     <Slide direction="right">
-                        <p>As a front-end developer, I specialize in creating and styling front-end components that fulfill the requirements of our mockups and user stories. My skills include CSS, SASS, Bootstrap, React, HTML, and JavaScript. With my expertise in front-end development, I am dedicated to delivering high-quality user experiences and ensuring that my designs are integrated seamlessly.</p>
+                        <p className="blurb">With my expertise in front-end development, I am dedicated to delivering high-quality user experiences and ensuring that my designs are integrated seamlessly.</p>
                     </Slide>
                 </Grid>
             </Section>
@@ -29,7 +32,7 @@ const Content = () => {
                 <h2 onClick={() => { setExperienceOpen(!isExperienceOpen); setBar(!bar) }}>Experience</h2>
                 {isExperienceOpen && <Grid>
                     <Slide direction="left">
-                        <div>Toronto Zoo</div>
+                        <strong>Toronto Zoo</strong>
                     </Slide>
                     <Slide direction="up">
                         <div>2021-2022</div>
@@ -42,7 +45,7 @@ const Content = () => {
                     </Slide>
 
                     <Slide direction="left">
-                        <div>Self-Employed</div>
+                        <strong>Self-Employed</strong>
                     </Slide>
                     <Slide direction="up">
                         <div>2019-Present</div>
@@ -55,7 +58,7 @@ const Content = () => {
                     </Slide>
 
                     <Slide direction="left">
-                        <div>Surmesur</div>
+                        <strong>Surmesur</strong>
                     </Slide>
                     <Slide direction="up">
                         <div>2017-2019</div>
@@ -68,7 +71,7 @@ const Content = () => {
                     </Slide>
 
                     <Slide direction="left">
-                        <div>Fulford Place Museum</div>
+                        <strong>Fulford Place Museum</strong>
                     </Slide>
                     <Slide direction="up">
                         <div>2013-2016</div>
@@ -86,7 +89,7 @@ const Content = () => {
                 <h2 onClick={() => { setEducationOpen(!isEducationOpen); setBar(!bar) }}>Education</h2>
                 {isEducationOpen && <Grid>
                     <Slide direction="left">
-                        <div>University of Toronto Bootcamp</div>
+                        <strong>University of Toronto Bootcamp</strong>
                     </Slide>
                     <Slide direction="up">
                         <div>2023</div>
@@ -98,7 +101,7 @@ const Content = () => {
                         </div>
                     </Slide>
                     <Slide direction="left">
-                        <div>Trent University</div>
+                        <strong>Trent University</strong>
                     </Slide>
                     <Slide direction="up">
                         <div>2012-2017</div>
@@ -115,7 +118,7 @@ const Content = () => {
                 <h2 onClick={() => { setCertificationsOpen(!isCertificationsOpen); setBar(!bar) }}>Certifications</h2>
                 {isCertificationsOpen && <Grid>
                     <Slide direction="left">
-                        <div>Git Certification Course</div>
+                        <strong>Git Certification Course</strong>
                     </Slide>
                     <Slide direction="up">
                         <div>2023</div>
@@ -128,7 +131,7 @@ const Content = () => {
                     </Slide>
 
                     <Slide direction="left">
-                        <div>HTML Advanced Certification Course</div>
+                        <strong>HTML Advanced Certification Course</strong>
                     </Slide>
                     <Slide direction="up">
                         <div>2023</div>
@@ -141,7 +144,7 @@ const Content = () => {
                     </Slide>
 
                     <Slide direction="left">
-                        <div>JavaScript Certification Course</div>
+                        <strong>JavaScript Certification Course</strong>
                     </Slide>
                     <Slide direction="up">
                         <div>2023</div>
@@ -154,7 +157,7 @@ const Content = () => {
                     </Slide>
 
                     <Slide direction="left">
-                        <div>SASS Certification Course</div>
+                        <strong>SASS Certification Course</strong>
                     </Slide>
                     <Slide direction="up">
                         <div>2023</div>
@@ -201,18 +204,18 @@ display: grid;
     
 
     p {
-        margin-left: 2rem;
+        margin: 1.5rem;
     }
 
     strong {
-        margin-left: 2rem;
+        margin: 1.5rem;
     }
     @media (max-width: 840px) {
         width: 90%;
     }
   
     @media (max-width: 640px) {
-        padding: 2rem;
+        padding: 1.5rem;
         
     }`;
 const Section = styled.div`
@@ -221,10 +224,12 @@ border-bottom: .2px solid rgba(255, 248, 244, 0.4);
 
 h2 {
     font-size: 2rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
     margin-bottom: 1rem;
     cursor: pointer;
     position: relative;
-
+    margin: 1.5rem;
     &::after {
         content: "";
         position: absolute;
@@ -249,6 +254,10 @@ p {
     line-height: 1.5;
     transition: max-height 0.2s ease-out;
     overflow: hidden;
+}
+
+.blurb {
+    padding-top: 4rem;
 }`;
 const Grid = styled.div`
 display: grid;
@@ -266,4 +275,36 @@ width: 100%;
         width: 70%;
     }
     `;
+
+    const ProfileText = styled.h3`
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    padding-right: 5rem;
+    padding-left: .5rem;
+    font-weight: 600;
+    &::before {
+        content: "";
+        position: absolute;
+        top: .4rem;
+        left: 0;
+        width: 100%;
+        height: 0.5em; /* 20% of the font size */
+        background-color: rgba(255, 248, 244, 0.2);
+        z-index: -1;
+    }
+    @media (max-width: 640px) {
+        display: none;
+    }
+`;
+
+const ImageWrapper = styled.div`
+display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+`;
 
