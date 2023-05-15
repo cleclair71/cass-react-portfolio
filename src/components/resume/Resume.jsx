@@ -5,6 +5,7 @@ import Content from './Content';
 import Footer from '../Footer';
 import styled from 'styled-components';
 import Header from '../Banner/Header';
+import SkillsSection from './Skill';
 
 const Resume = () => {
   return (
@@ -15,6 +16,7 @@ const Resume = () => {
       </ResBanner>
       <Top />
       <Content />
+      <SkillsSection />
       <ChangeColor>
         <Footer />
       </ChangeColor>

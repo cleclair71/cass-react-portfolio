@@ -19,7 +19,7 @@ const Content = () => {
                     </Slide>
                     <Slide direction="up">
                         <ImageWrapper>
-                            <ProfileText>PROFILE</ProfileText>
+                            {/* <ProfileText>PROFILE</ProfileText> */}
                             <RoundedImage src="/assets/IMG_5541.jpg" alt="Cassie LeClair" />
                         </ImageWrapper>
                     </Slide>
@@ -170,7 +170,7 @@ const Content = () => {
                     </Slide>
                 </Grid>}
             </Section>
-            <Section>
+            {/* <Section>
                 <h2 onClick={() => { setSkillsOpen(!isSkillsOpen); setBar(!bar) }}>Skills</h2>
                 {isSkillsOpen && <Grid>
                     <Slide direction="left">
@@ -186,7 +186,7 @@ const Content = () => {
                         </div>
                     </Slide>
                 </Grid>}
-            </Section>
+            </Section> */}
         </Container>
     );
 };
@@ -196,7 +196,6 @@ export default Content;
 const Container = styled.div`
 display: grid;
     flex-direction: column;
-    padding: 3.2rem;
     gap: 2rem;
     margin: 0 auto;
     width: 80%;
@@ -226,7 +225,6 @@ h2 {
     font-size: 2rem;
     font-family: 'Barlow Condensed', sans-serif;
     text-transform: uppercase;
-    margin-bottom: 1rem;
     cursor: pointer;
     position: relative;
     margin: 1.5rem;
@@ -268,7 +266,7 @@ display: grid;
         grid-template-columns: 1fr;
     }`;
 const RoundedImage = styled.img`
-width: 100%;
+width: 80%;
     border-radius: 50%;
     margin: 0 auto;
     @media (max-width: 640px) {
@@ -276,30 +274,29 @@ width: 100%;
     }
     `;
 
-    const ProfileText = styled.h3`
-    color: var(--white);
-    font-size: 1.2rem;
-    font-weight: bold;
-    position: relative;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    padding-right: 5rem;
-    padding-left: .5rem;
-    font-weight: 600;
-    &::before {
-        content: "";
-        position: absolute;
-        top: .4rem;
-        left: 0;
-        width: 100%;
-        height: 0.5em; /* 20% of the font size */
-        background-color: rgba(255, 248, 244, 0.2);
-        z-index: -1;
-    }
-    @media (max-width: 640px) {
-        display: none;
-    }
-`;
+//     const ProfileText = styled.h3`
+//     color: var(--white);
+//     font-size: 1.2rem;
+//     font-weight: bold;
+//     position: relative;
+//     margin-bottom: 2rem;
+//     padding-right: 5rem;
+//     padding-left: .5rem;
+//     font-weight: 600;
+//     &::before {
+//         content: "";
+//         position: absolute;
+//         top: .4rem;
+//         left: 0;
+//         width: 100%;
+//         height: 0.5em; /* 20% of the font size */
+//         background-color: rgba(255, 248, 244, 0.2);
+//         z-index: -1;
+//     }
+//     @media (max-width: 640px) {
+//         display: none;
+//     }
+// `;
 
 const ImageWrapper = styled.div`
 display: flex;
