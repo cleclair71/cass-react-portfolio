@@ -14,6 +14,7 @@ const Footer = () => {
 
     return (
         <Container id="footer">
+            
             <Profile>
                 <Slide direction="left" delay={1}>
                     <h1 id="heading">CONTACT</h1>
@@ -99,6 +100,7 @@ const Footer = () => {
                     </form>
                 </Slide>
             </FormContainer>
+            
         </Container >
     );
 };
@@ -109,17 +111,22 @@ const Container = styled.div`
     display: flex;
     position: relative;
     margin-top: 2rem;
-    padding: 2rem 0;
+    padding: 2rem;
     width: 80%;
     max-width: 1280px;
     margin: 0 auto;
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.3);
+    border-radius: 10px;
+
     @media (max-width: 840px) {
         width: 90%;
-      }
-      @media (max-width: 650px) {
+    }
+    @media (max-width: 650px) {
         flex-direction: column;
         gap: 3rem;
-      }`;
+    }
+`;
 const Profile = styled.div`
 flex: 1;
 #heading {

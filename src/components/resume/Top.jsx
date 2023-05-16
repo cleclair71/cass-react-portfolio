@@ -11,20 +11,20 @@ const Top = () => {
         <Grid>
           <Slide direction="left">
             <TitleWrapper>
-            <h1>Cassie LeClair</h1>
-            <h3>Front End Web Developer</h3>
+              <h1>Cassie LeClair</h1>
+              <h3>Front End Web Developer</h3>
             </TitleWrapper>
-            
+
           </Slide>
           <Slide direction="up">
-          <ContactInfo>
-    <FiMail />
-    <span>cassieleclair71@gmail.com</span>
-  </ContactInfo>
-  <ContactInfo>
-    <FiPhone />
-    <span>+1 (123) 456-7890</span>
-  </ContactInfo>
+            <ContactInfo>
+              <FiMail />
+              <span>cassieleclair71@gmail.com</span>
+            </ContactInfo>
+            <ContactInfo>
+              <FiPhone />
+              <span>+1 (123) 456-7890</span>
+            </ContactInfo>
           </Slide>
           <Slide direction="right">
             <p className="blurb"></p>
@@ -103,13 +103,18 @@ p {
 }`;
 
 const Grid = styled.div`
-display: grid;
-    grid-template-columns: 2fr 1fr 3fr;
-    gap: 1rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 3fr;
+  gap: 1rem;
     
-    @media (max-width: 640px) {
-        grid-template-columns: 1fr;
-    }`;
+  @media (max-width: 1000px) {
+    grid-template-columns: 1fr;
+  }
+
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+  }
+`;
 
 const TitleWrapper = styled.div`
 display: flex;
@@ -118,13 +123,17 @@ display: flex;
   
     `;
 
-    const ContactInfo = styled.div`
+const ContactInfo = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 0.5rem;
 padding-top: 8rem;
+margin: 0 auto;
 
+@media (max-width: 1000px) {
+  padding-top: 2rem;
+}
 @media (max-width: 640px) {
   padding-top: 2rem;
 }

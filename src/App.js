@@ -35,15 +35,15 @@ function App() {
                 <Header />
                 <ProfHeader />
               </Banner>
-              <ChangeColor id="about">
+              <div id="about">
                 <About />
-              </ChangeColor>
+              </div>
               <div id="projects">
                 <Projects />
               </div>
-              <ChangeColor>
+              {/* <ChangeColor> */}
                 <Footer />
-              </ChangeColor>
+              {/* </ChangeColor> */}
             </>
           }/>
           <Route path="/resume" element={
@@ -65,12 +65,16 @@ function ScrollToHash() {
 }
 
 export default App;
-const Container = styled.div``;
-const Banner = styled.div`
-background: 
-url('/assets/field.png');
+const Container = styled.div`
+background: url('/assets/field.png');
 background-size: cover;
 background-position: center;
+background-attachment: fixed;`;
+const Banner = styled.div`
+// background: 
+// url('/assets/field.png');
+// background-size: cover;
+// background-position: center;
 height: 100vh;
 @media (max-width: 640px) {
 height: 100%;
@@ -78,6 +82,6 @@ padding-bottom: 2rem;
 }
 `;
 
-  const ChangeColor = styled.div`
-  background: var(--dark);
-  `;
+  // const ChangeColor = styled.div`
+  // background: var(--dark);
+  // `;
