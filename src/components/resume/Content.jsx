@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { Slide } from 'react-awesome-reveal';
 
 const Content = () => {
-    const [isSkillsOpen, setSkillsOpen] = useState(false);
     const [isEducationOpen, setEducationOpen] = useState(false);
     const [isExperienceOpen, setExperienceOpen] = useState(false);
     const [isCertificationsOpen, setCertificationsOpen] = useState(false);
@@ -170,23 +169,7 @@ const Content = () => {
                     </Slide>
                 </Grid>}
             </Section>
-            {/* <Section>
-                <h2 onClick={() => { setSkillsOpen(!isSkillsOpen); setBar(!bar) }}>Skills</h2>
-                {isSkillsOpen && <Grid>
-                    <Slide direction="left">
-                        <div>Your skills go here...</div>
-                    </Slide>
-                    <Slide direction="up">
-                        <div>Year...</div>
-                    </Slide>
-                    <Slide direction="right">
-                        <div>
-                            <strong>Job Title...</strong>
-                            <p>Description...</p>
-                        </div>
-                    </Slide>
-                </Grid>}
-            </Section> */}
+            {/* skills section*/}
         </Container>
     );
 };
