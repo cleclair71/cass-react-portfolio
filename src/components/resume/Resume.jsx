@@ -41,7 +41,7 @@ padding-bottom: 2rem;
 
 
 const Background = styled.div`
-margin: 0 auto;
+margin: 0 auto; 
 background: url('/assets/field.png');
 background-size: cover;
 background-position: center;
