@@ -102,10 +102,10 @@ h3 {
         
     }
     button {
+        margin-top: 2rem;
         background: none;
         border: 1px solid var(--white);
         padding: 0.7rem 1.4rem;
-        margin-top: 2rem;
         cursor: pointer;
         font-weight: 600;
         filter: drop-shadow(0px 8px 8px #13262a);
@@ -114,11 +114,17 @@ h3 {
         letter-spacing: 0.2rem;
         font-size: .8rem;
         text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
         border-radius: 5px;
+        @media (max-width: 640px) {
+            padding: 0.5rem 1rem;
+            font-size: 0.7rem;
+        }
         :hover {
             background-color: rgba(255, 248, 244, 0.2);
-        }
-        `;
+        }`;
         const Social = styled.div`
         margin-top: 2rem;
         display: flex;

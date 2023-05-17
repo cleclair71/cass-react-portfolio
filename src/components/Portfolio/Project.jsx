@@ -21,7 +21,8 @@ export default Project;
 
 const Container = styled.div`
     height: 10rem;
-    background-color: #13262a;
+    bbackdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.3);
     margin: 0 0.5rem;
     padding: 0.5rem;
     border-radius: 5px;
@@ -57,7 +58,9 @@ const Container = styled.div`
             font-family: 'Montserrat', sans-serif;
             a{
                 margin-left: 0.4rem;
-                color: red;
+                color: white;
+                text-transform: uppercase;
+                font-weight: 600;
                 text-decoration: none;
             }
         }

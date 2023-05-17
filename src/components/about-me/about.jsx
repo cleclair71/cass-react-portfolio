@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Card from './Card';
-import { Slide } from 'react-awesome-reveal';
+import { Slide, Zoom } from 'react-awesome-reveal';
 import { MdDesignServices } from "react-icons/md";
 import { FiCodesandbox } from "react-icons/fi";
 import { CgWebsite } from "react-icons/cg";
@@ -18,11 +18,11 @@ const About = () => {
                     <Card Icon={MdDesignServices} title={"design"}
                      description={"I value simple content structure, clean design patterns, and thoughtful interactions."} />
                 </Slide>
-                <Slide direction="up">
+                <Zoom>
                     <Card Icon={FiCodesandbox} 
                     title={"development"} 
                     description={"I like to code things from scratch, and enjoy bringing ideas to life in the browser."} />
-                </Slide>
+                </Zoom>
                 <Slide direction="right">
                     <Card Icon={CgWebsite}
                         title={"web design"}

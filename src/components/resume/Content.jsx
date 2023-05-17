@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Slide } from 'react-awesome-reveal';
+import { Slide, Zoom } from 'react-awesome-reveal';
 
 const Content = () => {
     const [isEducationOpen, setEducationOpen] = useState(false);
@@ -16,12 +16,12 @@ const Content = () => {
                     <Slide direction="left">
                         <h2>About Me</h2>
                     </Slide>
-                    <Slide direction="up">
+                    <Zoom>
                         <ImageWrapper>
                             {/* <ProfileText>PROFILE</ProfileText> */}
                             <RoundedImage src="/assets/IMG_5541.jpg" alt="Cassie LeClair" />
                         </ImageWrapper>
-                    </Slide>
+                    </Zoom>
                     <Slide direction="right">
                         <p className="blurb">With my expertise in front-end development, I am dedicated to delivering high-quality user experiences and ensuring that my designs are integrated seamlessly.</p>
                     </Slide>
@@ -33,9 +33,9 @@ const Content = () => {
                     <Slide direction="left">
                         <strong>Toronto Zoo</strong>
                     </Slide>
-                    <Slide direction="up">
+                    <Zoom>
                         <div>2021-2022</div>
-                    </Slide>
+                    </Zoom>
                     <Slide direction="right">
                         <div>
                             <strong>Horticultural Technician</strong>
@@ -46,9 +46,9 @@ const Content = () => {
                     <Slide direction="left">
                         <strong>Self-Employed</strong>
                     </Slide>
-                    <Slide direction="up">
+                    <Zoom>
                         <div>2019-Present</div>
-                    </Slide>
+                    </Zoom>
                     <Slide direction="right">
                         <div>
                             <strong>Certified Personal Trainer</strong>
@@ -59,9 +59,9 @@ const Content = () => {
                     <Slide direction="left">
                         <strong>Surmesur</strong>
                     </Slide>
-                    <Slide direction="up">
+                    <Zoom>
                         <div>2017-2019</div>
-                    </Slide>
+                    </Zoom>
                     <Slide direction="right">
                         <div>
                             <strong>Assistant Manager</strong>
@@ -72,9 +72,9 @@ const Content = () => {
                     <Slide direction="left">
                         <strong>Fulford Place Museum</strong>
                     </Slide>
-                    <Slide direction="up">
+                    <Zoom>
                         <div>2013-2016</div>
-                    </Slide>
+                    </Zoom>
                     <Slide direction="right">
                         <div>
                             <strong>Museum Supervisor</strong>
@@ -90,9 +90,9 @@ const Content = () => {
                     <Slide direction="left">
                         <strong>University of Toronto Bootcamp</strong>
                     </Slide>
-                    <Slide direction="up">
+                    <Zoom>
                         <div>2023</div>
-                    </Slide>
+                    </Zoom>
                     <Slide direction="right">
                         <div>
                             <strong>Full-Stack Web Development</strong>
@@ -102,9 +102,9 @@ const Content = () => {
                     <Slide direction="left">
                         <strong>Trent University</strong>
                     </Slide>
-                    <Slide direction="up">
+                    <Zoom>
                         <div>2012-2017</div>
-                    </Slide>
+                    </Zoom>
                     <Slide direction="right">
                         <div>
                             <strong>Ancient Greek & Roman Studies & Archaeology</strong>
@@ -119,9 +119,9 @@ const Content = () => {
                     <Slide direction="left">
                         <strong>Git Certification Course</strong>
                     </Slide>
-                    <Slide direction="up">
+                    <Zoom>
                         <div>2023</div>
-                    </Slide>
+                    </Zoom>
                     <Slide direction="right">
                         <div>
                             <strong>Google Developers</strong>
@@ -132,9 +132,9 @@ const Content = () => {
                     <Slide direction="left">
                         <strong>HTML Advanced Certification Course</strong>
                     </Slide>
-                    <Slide direction="up">
+                    <Zoom>
                         <div>2023</div>
-                    </Slide>
+                    </Zoom>
                     <Slide direction="right">
                         <div>
                             <strong>Google Developers</strong>
@@ -145,9 +145,9 @@ const Content = () => {
                     <Slide direction="left">
                         <strong>JavaScript Certification Course</strong>
                     </Slide>
-                    <Slide direction="up">
+                    <Zoom>
                         <div>2023</div>
-                    </Slide>
+                    </Zoom>
                     <Slide direction="right">
                         <div>
                             <strong>Google Developers</strong>
@@ -158,9 +158,9 @@ const Content = () => {
                     <Slide direction="left">
                         <strong>SASS Certification Course</strong>
                     </Slide>
-                    <Slide direction="up">
+                    <Zoom>
                         <div>2023</div>
-                    </Slide>
+                    </Zoom>
                     <Slide direction="right">
                         <div>
                             <strong>Google Developers</strong>

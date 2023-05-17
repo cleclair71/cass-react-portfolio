@@ -16,7 +16,8 @@ export default Card;
 
 const Container = styled.div`
     width: 100%;
-    background: var(--background)!important;
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.3);
     padding: 1rem;
     text-align: center;
     border-radius: 5px;

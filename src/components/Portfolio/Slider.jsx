@@ -104,18 +104,21 @@ const Container = styled.div`
 
 const Buttons = styled.div`
   button{
-    width: 2rem;
-    height: 2rem;
+    width: 3.5rem;
+    height: 3.5rem;
     background-color: rgba(19, 38, 42, 0.4);
     cursor: pointer;
     color: var(--white);
     border: none;
     position: absolute;
     top: 45%;
-    right: -1rem;
+    font-size: 1.5rem;
+    right: -3rem;
+    border-radius: 5px;
   }
 
   .back{
-    left: -1rem;
+    left: -3rem;
+    
   }
 `
