@@ -7,6 +7,7 @@ import Projects from './components/Portfolio/Projects.jsx';
 import Resume from './components/resume/Resume.jsx';
 import { useEffect } from 'react';
 import Footer from './components/Footer.jsx';
+import Cursor from './components/StyledCursor.jsx'
 
 
 function useScrollToHash() {
@@ -31,11 +32,13 @@ function App() {
         <Routes>
           <Route path="/" element={
             <>
+            <Cursor />
               <Banner>
                 <Header />
                 <ProfHeader />
               </Banner>
               <div id="about">
+                
                 <About />
               </div>
               <div id="projects">

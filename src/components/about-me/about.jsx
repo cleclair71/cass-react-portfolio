@@ -50,9 +50,9 @@ const Container = styled.div`
     h1 {
         font-size: 4rem;
     color: var(--white);
-    font-family: 'Mothra', serif;
+    font-family: 'chalkandfriendone-regular', serif;
+    line-height: .9; 
     font-weight: 300;
-    letter-spacing: 0.1rem;
     text-transform: uppercase;
     text-shadow: 4px 3px 4px #000;
     }

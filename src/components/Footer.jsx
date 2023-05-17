@@ -130,7 +130,7 @@ const Container = styled.div`
 const Profile = styled.div`
 flex: 1;
 #heading {
-    font-family: 'Mothra', serif;
+    font-family: 'chalkandfriendone-regular', serif;
     color: var(--white);
     text-shadow: 4px 3px 4px #000000;
     font-size: 3rem;

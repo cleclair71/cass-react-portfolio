@@ -49,7 +49,7 @@ flex: 1;
 h1 {
     font-size: 5rem;
     color: var(--white);
-    font-family: 'Mothra', serif;
+    font-family: 'chalkandfriendone-regular', serif;
     letter-spacing: 0.2rem;
     text-transform: uppercase;
     padding-bottom: .2rem;

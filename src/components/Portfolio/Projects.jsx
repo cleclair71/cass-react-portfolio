@@ -35,9 +35,10 @@ const Container = styled.div`
     }
     h1{
         font-size: 4rem;
-        font-family: 'Mothra', serif;
+        font-family: 'chalkandfriendone-regular', serif;
         text-shadow: 4px 3px 4px rgba(19, 38, 42, 1);
-        letter-spacing: 0.2rem;
+        line-height: .9; 
+    font-weight: 300;
         text-transform: uppercase;
     }
 

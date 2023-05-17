@@ -67,19 +67,20 @@ h4 {
     font-size: 1.8rem;
 }
 h1 {
-    font-size: 5rem;
+    font-size: 7rem;
     color: var(--white);
-    font-family: 'Mothra', serif;
-    letter-spacing: 0.2rem;
+    font-family: 'chalkandfriendone-regular', serif;
     text-transform: uppercase;
-    padding-bottom: .2rem;
+    line-height: .9; 
+    font-weight: 300;
     text-shadow: 4px 3px 4px rgba(19, 38, 42, 1);
-    padding-top: 1rem;
+   
     @media (max-width: 640px) {
-        font-size: 3.5rem; // Reduced font size for smaller screens
+        font-size: 4rem; // Reduced font size for smaller screens
     }
 }
 h3 {
+    padding-top: 1rem;
     font-size: 1.4rem;
     font-weight: 600;
     padding-bottom: 1.2rem;
