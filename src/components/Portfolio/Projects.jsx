@@ -11,8 +11,7 @@ const Projects = () => {
     <Container id='project'>
         <Zoom>
             <h1>Recent Projects</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto doloremque 
-            voluptate excepturi porro sed totam quis animi dolorum rerum earum.</p>
+            <p>From responsive layouts to interactive features, each project represents a unique challenge and an opportunity for creativity. Take a closer look at these examples to get a glimpse of my dedication to delivering high-quality and visually stunning digital experiences.</p>
         </Zoom>
         <Slide>
             <SliderComp/>
@@ -43,10 +42,10 @@ const Container = styled.div`
     }
 
     p{
-        width: 28rem;
+        width: 80%;
         margin: 0 auto;
         padding: 1rem 0;
-        font-size: 0.9rem;
+        font-size: 1.2rem;
         @media(max-width : 500px){
             width: 90%;
         }

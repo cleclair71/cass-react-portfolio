@@ -18,12 +18,12 @@ const Content = () => {
                     </Slide>
                     <Zoom>
                         <ImageWrapper>
-                            {/* <ProfileText>PROFILE</ProfileText> */}
+                            
                             <RoundedImage src="/assets/IMG_5541.jpg" alt="Cassie LeClair" />
                         </ImageWrapper>
                     </Zoom>
                     <Slide direction="right">
-                        <p className="blurb">With my expertise in front-end development, I am dedicated to delivering high-quality user experiences and ensuring that my designs are integrated seamlessly.</p>
+                        <p className="blurb">I specialize in design and CSS, creating visually appealing and user-friendly interfaces. With expertise in HTML5, CSS3, and responsive design, I craft seamless websites that perform optimally across devices. Leveraging JavaScript and frameworks like React, I implement interactive features for exceptional web applications. Passionate about staying updated with industry trends, I strive to create immersive and accessible web experiences..</p>
                     </Slide>
                 </Grid>
             </Section>
@@ -39,7 +39,7 @@ const Content = () => {
                     <Slide direction="right">
                         <div>
                             <strong>Horticultural Technician</strong>
-                            <p>Description...</p>
+                            <p>As a Horticultural Technician, I was responsible for maintaining and enhancing the zoo's landscapes and gardens. This included planting and nurturing a variety of plant species, implementing landscape designs, and ensuring the overall health and aesthetic appeal of the zoo's outdoor areas. I collaborated with a team of horticultural professionals to create engaging and sustainable environments for both visitors and animal inhabitants.</p>
                         </div>
                     </Slide>
 
@@ -184,7 +184,7 @@ display: grid;
     width: 80%;
     max-width: 1200px;
     
-
+ 
     p {
         margin: 1.5rem;
     }
@@ -201,7 +201,7 @@ display: grid;
         
     }`;
 const Section = styled.div`
-margin-bottom: 2rem;
+margin-bottom: 1rem;
 border-bottom: .2px solid rgba(255, 248, 244, 0.4);
 
 h2 {
@@ -249,39 +249,19 @@ display: grid;
 const RoundedImage = styled.img`
 width: 80%;
     border-radius: 50%;
+    opacity: 0.8;
+    
     @media (max-width: 640px) {
         width: 70%;
     }
     `;
+    
 
-//     const ProfileText = styled.h3`
-//     color: var(--white);
-//     font-size: 1.2rem;
-//     font-weight: bold;
-//     position: relative;
-//     margin-bottom: 2rem;
-//     padding-right: 5rem;
-//     padding-left: .5rem;
-//     font-weight: 600;
-//     &::before {
-//         content: "";
-//         position: absolute;
-//         top: .4rem;
-//         left: 0;
-//         width: 100%;
-//         height: 0.5em; /* 20% of the font size */
-//         background-color: rgba(255, 248, 244, 0.2);
-//         z-index: -1;
-//     }
-//     @media (max-width: 640px) {
-//         display: none;
-//     }
-// `;
 
 const ImageWrapper = styled.div`
 display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 2rem;
+    // padding-bottom: 2rem;
 `;
 

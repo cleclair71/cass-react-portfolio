@@ -8,10 +8,11 @@ const ResHeader = () => {
         <Container id="home">
             <Slide direction="left">
                 <Texts>
-                    <h1>I'm Cassie LeClair.</h1>
+                    <h1>
+                        Cassie LeClair.</h1>
                     <p>I'm a Front End Web Developer based in the Greater Toronto Area. I have a passion for creating beautiful, responsive websites and applications. I'm currently seeking a full-time position as a Front End Web Developer.</p>
                     <Buttons>
-                        <button>Contact</button>
+                        <a href="/resume/#footer">Contact</a>
                         <a href="/assets/Resume/resume.pdf" download>
                             Resume <AiOutlineDownload />
                         </a>
@@ -30,13 +31,14 @@ background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(1px);
     display: flex;
    margin: 0 auto;
+   margin-top: 2rem;
     padding-top: 3.2rem;
-    padding: 2rem;
+    padding: 4rem;
     gap: 2rem;
-    margin: 0 auto;
     width: 80%;
     max-width: 1200px;
     border-radius: 10px;
+   
     @media (max-width: 840px) {
         width: 90%;
     }
@@ -50,20 +52,25 @@ h1 {
     font-size: 5rem;
     color: var(--white);
     font-family: 'chalkandfriendone-regular', serif;
-    letter-spacing: 0.2rem;
+    line-height: .9; 
+    font-weight: 300;
+    display: flex;
+
     text-transform: uppercase;
-    padding-bottom: .2rem;
+    padding-bottom: 2rem;
     text-shadow: 4px 3px 4px rgba(19, 38, 42, 1);
     padding-left: 1rem;
     @media (max-width: 640px) {
         font-size: 3rem;
     }
 }
+
 p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 200;
     font-family: 'Montserrat', sans-serif;
     color: rgba(255, 248, 244, 0.9);
+    width: 80%;
     @media (max-width: 640px) {
         font-size: 1rem;
     }
@@ -76,7 +83,7 @@ display: flex;
 gap: 1rem;
 flex-direction: row;
 flex-wrap: wrap;
-justify-content: space-between;
+
 button {
     background: none;
     border: 1px solid var(--white);

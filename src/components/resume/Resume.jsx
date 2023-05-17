@@ -6,24 +6,26 @@ import Footer from '../Footer';
 import styled from 'styled-components';
 import Header from '../Banner/Header';
 import SkillsSection from './Skill';
+import Cursor from '../StyledCursor'
 
 const Resume = () => {
   return (
     <div>
+      <Cursor />
       <ResBanner>
         <Header />
         <ResHeader />
       </ResBanner>
       <Background>
-      <BlurredContainer>
+        <BlurredContainer>
           <Top />
           <Content />
           <SkillsSection />
         </BlurredContainer>
       </Background>
-      
-        <Footer />
-      
+
+      <Footer />
+
     </div>
   );
 };

@@ -98,7 +98,8 @@ const Nav = styled.div`
     position: fixed;
     display: flex;
     flex-direction: column;
-    background-color: var(--background);
+    backdrop-filter: blur(20px);
+    background: rgba(255,255,255,0.3);
     inset: 0;
     justify-content: center;
     align-items: center;
@@ -115,7 +116,7 @@ span {
         color: var(--white);
         text-decoration: none;
         font-family: 'Just Me Again Down Here', cursive;
-        font-size: 1.4rem;
+        font-size: 1.8rem;
         position: relative;
         font-weight: 300;
         :before {

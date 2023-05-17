@@ -15,10 +15,10 @@ const skills = [
   ];
 
   const colors = {
-    "bar": "#945632",
+    "bar": "#fff8f4b0",
     "title": {
       "text": "#FFF8F4",
-      "background": "#13262a"
+      "background": "var(--background)"
     }
   }
 

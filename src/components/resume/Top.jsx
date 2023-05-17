@@ -19,11 +19,11 @@ const Top = () => {
           <Slide direction="up">
             <ContactInfo>
               <FiMail />
-              <span>cassieleclair71@gmail.com</span>
+              <a href="mailto:cassieleclair71@gmail.com"><span>cassieleclair71@gmail.com</span></a>
             </ContactInfo>
             <ContactInfo>
               <FiPhone />
-              <span>+1 (123) 456-7890</span>
+              <a href="tel:+15555555555"><span>+1 (555) 555-5555</span></a>
             </ContactInfo>
           </Slide>
           <Slide direction="right">
@@ -46,7 +46,7 @@ display: grid;
     margin: 0 auto;
     width: 80%;
     max-width: 1200px;
-    
+    margin-bottom: -2rem;
 
     p {
         margin: 1.5rem;
@@ -56,7 +56,7 @@ display: grid;
         margin: 1.5rem;
     }
     @media (max-width: 840px) {
-        width: 90%;
+        width: 100%;
     }
   
     @media (max-width: 640px) {
@@ -131,11 +131,24 @@ const ContactInfo = styled.div`
 padding-top: 8rem;
 margin: 0 auto;
 
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
 @media (max-width: 1000px) {
   padding-top: 2rem;
 }
 @media (max-width: 640px) {
   padding-top: 2rem;
+
+  a {
+    display: none;
+  }
+  svg {
+    displa: flex;
+    flex-direction: row;
+  }
 }
   svg {
     font-size: 3rem;
