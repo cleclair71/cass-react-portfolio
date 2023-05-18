@@ -61,7 +61,7 @@ This project is a single-page portfolio website built with React.js. It showcase
    </div>
    <br />
    <p align="center"> 
-   <a href="https://drive.google.com/file/d/1oZJElx4QXzcGZlfQwMoUEVd9D6Ld_YKO/view?usp=sharing">Deployed Website</a>
+   <a href="https://cleclair71.github.io/cass-react-portfolio/">Deployed Website</a>
    </p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
