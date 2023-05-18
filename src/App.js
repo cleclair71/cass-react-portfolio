@@ -8,6 +8,7 @@ import Resume from './components/resume/Resume.jsx';
 import { useEffect } from 'react';
 import Footer from './components/Footer.jsx';
 import Cursor from './components/StyledCursor.jsx'
+import FieldImage from './assets/field.png';
 
 // scroll to hash
 function useScrollToHash() {
@@ -30,7 +31,7 @@ function App() {
       <ScrollToHash />
       <Container>
         <Routes>
-          <Route path="/" element={
+          <Route path="/cass-react-portfolio" element={
             <>
               <Cursor />
               <Banner>
@@ -64,7 +65,7 @@ function ScrollToHash() {
 
 export default App;
 const Container = styled.div`
-background: url('/assets/field.png');
+background: url(${FieldImage});
 background-size: cover;
 background-position: center;
 background-attachment: fixed;`;

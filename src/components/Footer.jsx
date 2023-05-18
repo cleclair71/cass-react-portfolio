@@ -11,15 +11,15 @@ const Footer = () => {
         title: "Navigate",
         items: [
           {
-            name: <a href="/">Home</a>
+            name: <a href="/cass-react-portfolio">Home</a>
             
           },
           {
-            name: <a href="/#about">About</a>
+            name: <a href="/cass-react-portfolio/#about">About</a>
             
           },
           {
-            name: <a href="/#projects">Portfolio</a>
+            name: <a href="/cass-react-portfolio/#projects">Portfolio</a>
             
           },
           {

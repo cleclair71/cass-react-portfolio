@@ -13,9 +13,9 @@ const Header = () => {
                 <h1><a href="/">cassie</a></h1>
             </Logo>
             <Nav bar={bar}>
-                <span><a href="/#about">about me</a></span>
-                <span><a href="/#projects">portfolio</a></span>
-                <span><a href="/#footer">contact</a></span>
+                <span><a href="/cass-react-portfolio/#about">about me</a></span>
+                <span><a href="/cass-react-portfolio/#projects">portfolio</a></span>
+                <span><a href="/cass-react-portfolio/#footer">contact</a></span>
                 <span><Link to="/resume">resume</Link></span>
             </Nav>
             <div onClick={() => setBar(!bar)} className="bars">

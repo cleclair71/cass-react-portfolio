@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { AiOutlineGithub, AiOutlineLinkedin} from 'react-icons/ai';
 import { Slide } from 'react-awesome-reveal';
+import profilePic from '../../assets/profilepiccc.png';
 
 // This is the header component for the home page
 const ProfHeader = () => {
@@ -38,7 +39,7 @@ const ProfHeader = () => {
                 </Slide>
                 <Slide direction="right">
                     <Profile>
-                        <img src="/assets/profilepiccc.png" alt="profile" />
+                    <img src={profilePic} alt="profile" />
                     </Profile>
                 </Slide>
         </Container>

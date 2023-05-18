@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Slide, Zoom } from 'react-awesome-reveal';
+import cassieLeclair from '../../assets/IMG_5541.jpg';
 
 // Expandable content sections for the resume page
 const Content = () => {
@@ -22,7 +23,7 @@ const Content = () => {
                     <Zoom>
                         <ImageWrapper>
                             
-                            <RoundedImage src="/assets/IMG_5541.jpg" alt="Cassie LeClair" />
+                            <RoundedImage src={cassieLeclair} alt="Cassie" />
                         </ImageWrapper>
                     </Zoom>
                     <Slide direction="right">
