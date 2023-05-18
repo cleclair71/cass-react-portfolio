@@ -14,7 +14,7 @@ const ResHeader = () => {
                         Cassie LeClair.</h1>
                     <p>I'm a Front End Web Developer based in the Greater Toronto Area. I have a passion for creating beautiful, responsive websites and applications. I'm currently seeking a full-time position as a Front End Web Developer.</p>
                     <Buttons>
-                        <a href="/resume/#footer">Contact</a>
+                        <a href="/cass-react-portfolio/#footer">Contact</a>
                         <a href="/assets/Resume/resume.pdf" download>
                             Resume <AiOutlineDownload />
                         </a>
