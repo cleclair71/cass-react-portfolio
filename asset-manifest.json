@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c4fa606f.css",
+    "main.js": "/static/js/main.bc856ad4.js",
+    "static/media/chalkandfriendone-regular-webfont.woff": "/static/media/chalkandfriendone-regular-webfont.6d2413eefcc8302f60f2.woff",
+    "static/media/chalkandfriendone-regular-webfont.woff2": "/static/media/chalkandfriendone-regular-webfont.1ff8942129bc06275ccf.woff2",
+    "index.html": "/index.html",
+    "main.c4fa606f.css.map": "/static/css/main.c4fa606f.css.map",
+    "main.bc856ad4.js.map": "/static/js/main.bc856ad4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c4fa606f.css",
+    "static/js/main.bc856ad4.js"
+  ]
+}
