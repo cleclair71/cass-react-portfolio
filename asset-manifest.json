@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cass-react-portfolio/static/css/main.77f6d6cf.css",
-    "main.js": "/cass-react-portfolio/static/js/main.3a8b9572.js",
+    "main.js": "/cass-react-portfolio/static/js/main.f8756bf9.js",
     "static/media/field.png": "/cass-react-portfolio/static/media/field.9d870079b65fd30d1e21.png",
     "static/media/profilepiccc.png": "/cass-react-portfolio/static/media/profilepiccc.5af5fe287a7e06eaa3a4.png",
     "static/media/chalkandfriendone-regular-webfont.woff": "/cass-react-portfolio/static/media/chalkandfriendone-regular-webfont.6d2413eefcc8302f60f2.woff",
@@ -9,10 +9,10 @@
     "static/media/IMG_5541.jpg": "/cass-react-portfolio/static/media/IMG_5541.5a2906af4e1c367f5835.jpg",
     "index.html": "/cass-react-portfolio/index.html",
     "main.77f6d6cf.css.map": "/cass-react-portfolio/static/css/main.77f6d6cf.css.map",
-    "main.3a8b9572.js.map": "/cass-react-portfolio/static/js/main.3a8b9572.js.map"
+    "main.f8756bf9.js.map": "/cass-react-portfolio/static/js/main.f8756bf9.js.map"
   },
   "entrypoints": [
     "static/css/main.77f6d6cf.css",
-    "static/js/main.3a8b9572.js"
+    "static/js/main.f8756bf9.js"
   ]
 }
