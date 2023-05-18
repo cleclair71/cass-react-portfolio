@@ -1,5 +1,0 @@
---background: #718385
---white: #FFF8F4
---dark: #13262a
---green: #5b5d30
---orange: #945632
