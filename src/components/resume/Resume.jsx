@@ -7,6 +7,7 @@ import styled from 'styled-components';
 import Header from '../Banner/Header';
 import SkillsSection from './Skill';
 import Cursor from '../StyledCursor'
+import FieldImage from '../../assets/field.png';
 
 // This is the Resume component that compiles its components and exports them to the App.js file
 const Resume = () => {
@@ -45,7 +46,7 @@ padding-bottom: 2rem;
 
 const Background = styled.div`
 margin: 0 auto; 
-background: url('/assets/field.png');
+background: url(${FieldImage});
 background-size: cover;
 background-position: center;
 background-attachment: fixed;
