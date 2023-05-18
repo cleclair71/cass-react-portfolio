@@ -9,7 +9,7 @@ import { useEffect } from 'react';
 import Footer from './components/Footer.jsx';
 import Cursor from './components/StyledCursor.jsx'
 
-
+// scroll to hash
 function useScrollToHash() {
   const { hash } = useLocation();
 
@@ -32,30 +32,25 @@ function App() {
         <Routes>
           <Route path="/" element={
             <>
-            <Cursor />
+              <Cursor />
               <Banner>
                 <Header />
                 <ProfHeader />
               </Banner>
               <div id="about">
-                
                 <About />
               </div>
               <div id="projects">
                 <Projects />
               </div>
-              {/* <ChangeColor> */}
-                <Footer />
-              {/* </ChangeColor> */}
+              <Footer />
             </>
-          }/>
+          } />
           <Route path="/resume" element={
             <>
-
               <Resume />
-
             </>
-          }/>
+          } />
         </Routes>
       </Container>
     </Router>
@@ -85,6 +80,3 @@ padding-bottom: 2rem;
 }
 `;
 
-  // const ChangeColor = styled.div`
-  // background: var(--dark);
-  // `;

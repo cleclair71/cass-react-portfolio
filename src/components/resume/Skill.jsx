@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Slide } from 'react-awesome-reveal';
 import SkillBar from 'react-skillbars';
 
+// Skill bar data
 const skills = [
     {type: "HTML", level: 85},
     {type: "CSS", level: 85},
@@ -14,6 +15,7 @@ const skills = [
     {type: "Responsive", level: 85},  
   ];
 
+  // Skill bar styling
   const colors = {
     "bar": "#fff8f4b0",
     "title": {
@@ -21,7 +23,7 @@ const skills = [
       "background": "var(--background)"
     }
   }
-
+// This is the Skills section layout component
   const SkillsSection = () => {
     const [isSkillsOpen, setSkillsOpen] = useState(false);
     const [bar, setBar] = useState(false);

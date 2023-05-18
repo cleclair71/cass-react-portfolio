@@ -1,7 +1,8 @@
-
 import React from 'react'
 import styled from 'styled-components';
 
+
+// This is the Portfolio layout component
 const Project = (props) => {
     const { img, disc } = props.item;
   return (

@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import { AiOutlineDownload } from 'react-icons/ai';
 import { Slide } from 'react-awesome-reveal';
 
+
+// This is the header component for the resume page
 const ResHeader = () => {
     return (
         <Container id="home">

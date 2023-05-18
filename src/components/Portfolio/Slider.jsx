@@ -5,6 +5,7 @@ import Project from './Project';
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import styled from 'styled-components';
 
+// Data for the slider
 let data = [
     {
         img : "https://res.cloudinary.com/dpwluiwee/image/upload/v1683850703/screen1_ibajko.jpg",
@@ -33,6 +34,7 @@ let data = [
     }
 ];
 
+// Settings for the slider
 var settings = {
     className: "center",
     centerMode: true,
@@ -73,6 +75,8 @@ var settings = {
       }
     ]
   };
+
+  // This is the slider component
   export default function SliderComp() {
   const arrowRef = useRef(null);
     let sliderProject = "";

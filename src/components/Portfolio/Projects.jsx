@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import SliderComp from './Slider';
 import { Zoom } from 'react-awesome-reveal';
 
+// This is the Portfolio section layout component
 const Projects = () => {
   return (
     <Container id='project'>
@@ -33,10 +34,11 @@ const Container = styled.div`
         width: 90%;
     }
     h1{
-        font-size: 4rem;
+        font-size: 5rem;
         font-family: 'chalkandfriendone-regular', serif;
         text-shadow: 4px 3px 4px rgba(19, 38, 42, 1);
         line-height: .9; 
+        padding-bottom: 1rem;
     font-weight: 300;
         text-transform: uppercase;
     }

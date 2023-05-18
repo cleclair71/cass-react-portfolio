@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 
+
+// event listener for cursor
 const Cursor = () => {
     const [position, setPosition] = useState({ x: 0, y: 0 });
 
@@ -16,6 +18,7 @@ const Cursor = () => {
         };
     }, []);
 
+    // event listener for cursor hover
     useEffect(() => {
         const handleLinkHoverEvents = () => {
             const clickableElements = document.querySelectorAll('a, button, input');
@@ -41,6 +44,7 @@ const Cursor = () => {
         handleLinkHoverEvents();
     }, []);
 
+    // cursor styling
     return <StyledCursor style={{ left: `${position.x}px`, top: `${position.y}px` }} />;
 };
 

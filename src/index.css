@@ -2,13 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Montserrat:wght@200&display=swap');
 
-@font-face {
-  font-family: 'Mothra';
-  src: url('../public/fonts/mothra-webfont.woff2') format('woff2'),
-       url('../public/fonts/mothra-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
 
 @font-face {
   font-family: 'chalkandfriendone-regular';
@@ -30,14 +23,11 @@
 :root{
   --background: rgb(113, 131, 133);
   --dark: #13262a;
-  --orange: rgb(175, 99, 54);
   --white: #FFF8F4;
-  --green: rgb(91, 93, 48);
   --hand: font-family: 'Just Me Again Down Here', cursive;
   --thin: font-family: 'Josefin Slab', serif;
   --funky: font-family: 'Goudy Bookletter 1911', serif;
-  /* font-family: 'Barlow Condensed', sans-serif;
-font-family: 'Montserrat', sans-serif; */
+  
 }
 body{
   width: 100%;

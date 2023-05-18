@@ -3,13 +3,14 @@ import styled from 'styled-components';
 import { AiOutlineGithub, AiOutlineLinkedin} from 'react-icons/ai';
 import { Slide } from 'react-awesome-reveal';
 
+// This is the header component for the home page
 const ProfHeader = () => {
     return (
         <Container id="home">
             <Slide direction="left">
                 <Texts>
                     <h4>
-                        hey, <span className="dark">i'm</span>
+                        hey, <span>i'm</span>
                     </h4>
                     <h1 className="red">cassie <br/> leclair</h1>
                     <h3 className="black">Front End Web Developer</h3>

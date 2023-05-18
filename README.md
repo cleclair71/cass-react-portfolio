@@ -2,13 +2,9 @@
   <a name="readme-top"></a>
  <br />
  <div align="center">
- <h1 align="center">CrewCard</h1>
-    <a href="https://github.com/cleclair71/CrewCard">
-     <img src="/assets/crewcardstacked1.jpg" alt="Logo" width="200" height="200">
-   </a>
-    <p align="center">
-      Teamwork made easy with our input generated CLI crew cards!
-    </p>
+ <h1 align="center">Cassie's Portfolio</h1>
+    
+    
   
 <br />
 <details><summary>Table of Contents;</summary>
@@ -17,15 +13,9 @@
 
 * [Added Features](#features)
  
-* [Installation](#installation)
- 
 * [Usage](#usage) 
 
 * [Contributing](#contributing)
-
-* [Resources](#resources)
-
-* [Tests](#tests)
  
 * [license](#license)
 
@@ -42,7 +32,7 @@
   <img src="assets\Capture.JPG"/>
 </p>
 
-Introducing our command-line application designed to help managers generate a webpage that displays their team's basic information, such as their email addresses and GitHub profiles. This allows for quick and easy access to important team member information. The webpage is nicely formatted and based on the user input. When you click on an email address in the webpage, your default email program will open and populate the TO field with the email address. Additionally, when you click on a team member's GitHub username, the application will open that GitHub profile in a new tab.
+This project is a single-page portfolio website built with React.js. It showcases my skills, projects, and provides a way to contact me. As a web developer, sharing my work is crucial not only for job applications or freelancing but also for being a part of the developer community. The portfolio is mobile-responsive and optimized for different screen sizes. It has been deployed using GitHub Pages.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -51,53 +41,23 @@ Introducing our command-line application designed to help managers generate a we
 
 ## :star: Added Features
 
- - Collapsible cards at a click of a button
- - Avatar api fetch with axios
+ - Styled Components
+ - React Skill Bars
  - Fully Responsive cards
- - Link to an alert that prompts you create a new team
- - Default photo is there if an api error or the user doesn't have a github profile
- - Role specific icons and cover photos
+ - Custom Cursor
+ - Scroll Animations
+ - Downloadable Resume
+ - Slider Portfolio
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<a name="installation"></a>
-
-## :hammer_and_wrench: Installation
-
-1. Clone the repository 
-
-```bash
-git clone https://github.com/cleclair71/CrewCard.git
-```
-2. Change the Working Directory
-
-```bash
-cd CrewCard
-```
-3. Install [`inquirer`](https://www.npmjs.com/package/inquirer), [`axios`](https://www.npmjs.com/package/axios) and [`jest`](https://www.npmjs.com/package/jest)
-
-```bash
-npm install inquirer axios jest --save-dev
-```
-4. Run the App
-
-```bash
-\CrewCard> node index.js
-```
-
-This will start the application and prompt you to answer the required prompts in the command line. 
-
-After answering all the prompts, your index.html file will be generated and saved in the dist folder. 
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
   <a name="usage"></a>
 
 ## :computer: Usage
 
 <div align="center">
-     <img src="assets\app.gif">
+     <img src="public/assets/Capture.PNG">
    </div>
    <br />
    <p align="center"> 
@@ -135,30 +95,6 @@ git push origin your-branch-name
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<a name="tests"></a>
-
-## :heavy_check_mark: Tests
-
-### Material
-
-Tests are run with [JEST](https://jestjs.io/)
-
-### How to Run the Tests
-
-* Setup the Environment
-
-```
-cd \CrewCard
-```
-
-* Run Tests
-
-```
-npm run test
-```
-
-  
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <a name="license"></a>
 
@@ -167,17 +103,6 @@ MIT
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<a name="resources"></a>
-## :mag_right: Resources
-
-* [Google Fonts](https://fonts.google.com/)
-* [Sticky Navbar](https://bootstrapious.com/p/bootstrap-sticky-navbar)
-* [Footer](https://mdbootstrap.com/docs/standard/navigation/footer/)
-* [Template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
-* [How To Create Interactive Command-line Prompts with Inquirer.js](https://www.digitalocean.com/community/tutorials/nodejs-interactive-command-line-prompts)
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <a name="questions"></a>
 
@@ -203,73 +128,3 @@ I welcome feedback and suggestions for this project. If you have ideas for how t
  
   <p align="right">(<a href="#readme-top">back to top</a>)</p>
  
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

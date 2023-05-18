@@ -40,6 +40,7 @@ const Container = styled.div`
     margin: auto;
     max-width: 1200px;
     padding: 3rem 0;
+    padding-bottom: 5rem;
     
     h4 {
         font-weight: 400;

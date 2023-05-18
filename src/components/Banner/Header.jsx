@@ -3,13 +3,14 @@ import styled from 'styled-components';
 import { TfiHeart } from 'react-icons/tfi';
 import { Link } from 'react-router-dom';
 
+// This is the header component for the entire site. It is used in the Resume component, and the Home component.
 const Header = () => {
     const [bar, setBar] = useState(false);
     return (
         <Container bar={bar}>
             <Logo>
                 <span className="black"><TfiHeart/></span>
-                <h1>portfolio</h1>
+                <h1><a href="/">cassie</a></h1>
             </Logo>
             <Nav bar={bar}>
                 <span><a href="/#about">about me</a></span>
@@ -87,11 +88,19 @@ const Logo = styled.div`
     span {
         font-size: 2rem;
         }
-        h1 {
-            font-size: 1.5rem;
+        a {
+            font-size: 3rem;
             font-weight: 200;
-            font-family: 'Josefin Slab', serif;
-            text-transform: uppercase;`
+            font-family: 'Just Me Again Down Here', cursive;
+            color: var(--white);
+            text-decoration: none;
+            transition: all 400ms ease-in-out;
+            opacity: .6;
+            :hover {
+                opacity: 1;
+
+            }
+        }`;
 
 const Nav = styled.div`
 @media (max-width: 640px) {

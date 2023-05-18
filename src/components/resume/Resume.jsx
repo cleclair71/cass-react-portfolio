@@ -8,6 +8,7 @@ import Header from '../Banner/Header';
 import SkillsSection from './Skill';
 import Cursor from '../StyledCursor'
 
+// This is the Resume component that compiles its components and exports them to the App.js file
 const Resume = () => {
   return (
     <div>

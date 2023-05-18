@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Slide } from 'react-awesome-reveal';
 import { FiMail, FiPhone } from "react-icons/fi";
 
+// This is the Top section layout component
 const Top = () => {
   return (
     <Container>

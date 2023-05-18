@@ -2,12 +2,15 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Slide, Zoom } from 'react-awesome-reveal';
 
+// Expandable content sections for the resume page
 const Content = () => {
     const [isEducationOpen, setEducationOpen] = useState(false);
     const [isExperienceOpen, setExperienceOpen] = useState(false);
     const [isCertificationsOpen, setCertificationsOpen] = useState(false);
     const [bar, setBar] = useState(false);
 
+
+    // resume page content
     return (
         <Container>
             <Section>
