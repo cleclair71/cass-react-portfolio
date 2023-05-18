@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Hahmlet:wght@100&family=Josefin+Slab:wght@500&family=Just+Me+Again+Down+Here&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Montserrat:wght@200&display=swap');
+
+
+@font-face {
+  font-family: 'chalkandfriendone-regular';
+  src: url('../public/fonts/chalkandfriendone-regular-webfont.woff2') format('woff2'),
+       url('../public/fonts/chalkandfriendone-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+  
+}
+
+:root{
+  --background: rgb(113, 131, 133);
+  --dark: #13262a;
+  --white: #FFF8F4;
+  --hand: font-family: 'Just Me Again Down Here', cursive;
+  --thin: font-family: 'Josefin Slab', serif;
+  --funky: font-family: 'Goudy Bookletter 1911', serif;
+  
+}
+body{
+  width: 100%;
+  background-color: var(--background);
+  color: var(--white);
+  overflow-x: hidden;
+  position: relative;
+}
+
+.black{
+  color: var(--white);
+}
+.red{
+  color: var(--orange);
+}
+
+.dark {
+  color: var(--dark);
+}
+
+.slick-list, .slick-slider, .slick-track{
+  padding: 1.5rem 0;
+}
+
+.center .slick-center .project{
+  transform: scale(1.3);
+  z-index: 10000;
+  transition: all 400ms ease-in-out;
+  pointer-events: all;
+  opacity: 1;
+}
+
+.center .project{
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.skillbar-bar {
+  border-radius: 5px !important;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.skillbar-title {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+@media(max-width: 990px){
+  .center .slick-center .project{
+    transform: scale(1);
+  }
+
+  .center .project{
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+/* scroll bar style  */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@keyframes header {
+  0%{
+    transform: translateY(-30px);
+    opacity: 0;
+  } 
+  100%{
+    transform: translateY(0);
+      opacity: 1;
+  }
+}
