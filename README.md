@@ -29,7 +29,7 @@
 <a name="description"></a>
 ## :rocket: About The Project
 <p align="center">
-  <img src="assets\Capture.JPG"/>
+  <img src="public/assets/Capture.PNG">
 </p>
 
 This project is a single-page portfolio website built with React.js. It showcases my skills, projects, and provides a way to contact me. As a web developer, sharing my work is crucial not only for job applications or freelancing but also for being a part of the developer community. The portfolio is mobile-responsive and optimized for different screen sizes. It has been deployed using GitHub Pages.
@@ -57,7 +57,7 @@ This project is a single-page portfolio website built with React.js. It showcase
 ## :computer: Usage
 
 <div align="center">
-     <img src="public/assets/Capture.PNG">
+     <img src="public/assets/Capture2.PNG">
    </div>
    <br />
    <p align="center"> 
