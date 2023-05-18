@@ -17,7 +17,7 @@ const ProfHeader = () => {
                     <h3 className="black">Front End Web Developer</h3>
                     <p>I'm a Front End Web Developer based in the Greater Toronto Area. I have a passion for creating beautiful, responsive websites and applications. I'm currently seeking a full-time position as a Front End Web Developer.</p>
                     <Buttons>
-                    <a href="/#footer">Contact</a>
+                    <a href="/cass-react-portfolio/#footer">Contact</a>
                     </Buttons>
                     <Social>
                         
@@ -155,6 +155,7 @@ img {
     width: 25rem;
     filter: drop-shadow(0px 8px 8px var(--dark));
     transition: transform 400ms ease-in-out;
+    opacity: .9;
     @media (max-width: 790px) {
         width: 20rem;
     }

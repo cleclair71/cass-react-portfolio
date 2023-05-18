@@ -3,20 +3,20 @@ import styled from 'styled-components';
 
 
 // This is the Portfolio layout component
-const Project = (props) => {
-    const { img, disc } = props.item;
-  return (
-    <Container className='project'>
-        <img src={img} alt="project" />
-        <div className="disc">
-            <h1>About</h1>
-            <p>{disc}
-            <a href="{link}">demo</a>
-            </p>
-        </div>
-    </Container>
-  )
+const Project = ({ item }) => {
+    return (
+        <Container className='project'>
+            <img src={item.img} alt="project" />
+            <div className="disc">
+                
+                <p>{item.disc}
+                <a href={item.link} target="_blank" rel="noopener noreferrer">VIEW</a>
+                </p>
+            </div>
+        </Container>
+    )
 }
+
 
 export default Project;
 
@@ -45,13 +45,7 @@ const Container = styled.div`
         padding: 0.5rem;
         background: linear-gradient(rgba(19, 38, 42, 0.5), rgba(19, 38, 42, 0.9));
         transition: all 400ms ease-in-out;
-        h1{
-            font-size: 1rem;
-            font-weight: 200;
-    padding-bottom: 1.2rem;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-        }
+      
     
         p{
             width: 90%;

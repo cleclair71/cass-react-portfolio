@@ -10,7 +10,7 @@ const Header = () => {
         <Container bar={bar}>
             <Logo>
                 <span className="black"><TfiHeart/></span>
-                <h1><a href="/">cassie</a></h1>
+                <h1><a href="/cass-react-portfolio">cassie leclair</a></h1>
             </Logo>
             <Nav bar={bar}>
                 <span><a href="/cass-react-portfolio/#about">about me</a></span>
@@ -87,10 +87,11 @@ const Logo = styled.div`
     gap: 0.5rem;
     span {
         font-size: 2rem;
+        opacity: .6;
         }
         a {
-            font-size: 3rem;
-            font-weight: 200;
+            font-size: 1.8rem;
+            font-weight: 100;
             font-family: 'Just Me Again Down Here', cursive;
             color: var(--white);
             text-decoration: none;
